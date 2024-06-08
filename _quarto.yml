@@ -8,10 +8,6 @@ website:
       - href: index.qmd
         text: Home
       - research.qmd
-      - text: CSS Assignments
-        menu:
-        - text: Assignment 1
-          href: assignment1.qmd
 
 format:
   html:
