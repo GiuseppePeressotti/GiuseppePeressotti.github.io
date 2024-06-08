@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "GiuseppePeressotti.github.io"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - research.qmd
+      - text: CSS Assignments
+        menu:
+        - text: Assignment 1
+          href: assignment1.qmd
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+
+editor: visual
+
