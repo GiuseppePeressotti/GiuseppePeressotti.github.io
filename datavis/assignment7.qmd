@@ -1,9 +1,0 @@
----
-title: "Assignment 7"
----
-
-## Assignment 7
-
-
-
-https://garth36.shinyapps.io/hackaton2/
