@@ -33,5 +33,12 @@
     "title": "Teaching",
     "section": "",
     "text": "Syllabus available here"
+  },
+  {
+    "objectID": "assign01.html",
+    "href": "assign01.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "About the Site\nThis site is powered by Quarto and will display my academic profile, including my bio, research, teaching, and contact information. While it is going to update for the current class, I will make further modifications in order to achieve a professional site by the time I will be on the job market (Fall 2026).\nI utilize “Lux” as the site theme, which can be customized in the _quarto.yml file. The theme is responsive and adapts to different screen sizes, ensuring a consistent (yet professional) look independent of the device used to access it. The site is structured with a navigation bar at the top, allowing easy access to different sections such as “Home”, “Research”, “Teaching” and “Assognments”. My CV can also be downloaded directly from the Home page (not updated)."
   }
 ]
