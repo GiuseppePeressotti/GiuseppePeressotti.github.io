@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignment 1 – GiuseppePeressotti.github.io</title>
+<title>Assignment 2 – GiuseppePeressotti.github.io</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -114,22 +149,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./assign02.html">
  <span class="dropdown-text">Assignment 2</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./assign03.html">
- <span class="dropdown-text">Assignment 3: Mapping Census Data</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./assign04.html">
- <span class="dropdown-text">Assignment 4</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./assign05.html">
- <span class="dropdown-text">Assignment 5</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./assign06.html">
- <span class="dropdown-text">Assignment 6</span></a>
-  </li>  
     </ul>
   </li>
 </ul>
@@ -148,7 +167,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about-the-site" id="toc-about-the-site" class="nav-link active" data-scroll-target="#about-the-site">About the Site</a></li>
+  <li><a href="#analysis-by-downloading-google-trends-data" id="toc-analysis-by-downloading-google-trends-data" class="nav-link active" data-scroll-target="#analysis-by-downloading-google-trends-data">Analysis by Downloading Google Trends Data</a></li>
+  <li><a href="#analysis-by-gtrendsr" id="toc-analysis-by-gtrendsr" class="nav-link" data-scroll-target="#analysis-by-gtrendsr">Analysis by gtrendsR</a></li>
   </ul>
 </nav>
     </div>
@@ -157,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 1</h1>
+<h1 class="title">Assignment 2</h1>
 </div>
 
 
@@ -174,10 +194,95 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="about-the-site" class="level1">
-<h1>About the Site</h1>
-<p>This site is powered by Quarto and will display my academic profile, including my bio, research, teaching, and contact information. While it is going to update for the current class, I will make further modifications in order to achieve a professional site by the time I will be on the job market (Fall 2026).</p>
-<p>I utilize “Lux” as the site theme, which can be customized in the <code>_quarto.yml</code> file. The theme is responsive and adapts to different screen sizes, ensuring a consistent (yet professional) look independent of the device used to access it. The site is structured with a navigation bar at the top, allowing easy access to different sections such as “Home”, “Research”, “Teaching” and “Assignments”. My CV can also be downloaded directly from the Home page (not updated).</p>
+<section id="analysis-by-downloading-google-trends-data" class="level1">
+<h1>Analysis by Downloading Google Trends Data</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># analyze the data after cleaning it</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>election <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'/Users/bepi36/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/UTD/Fall2025/Data collection/assignment_2/election.csv'</span>, <span class="at">skip =</span> <span class="dv">1</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(election) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"date"</span>, <span class="st">"hits"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>election<span class="sc">$</span>hits <span class="ot">&lt;-</span> <span class="fu">as.character</span>(election<span class="sc">$</span>hits)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>election<span class="sc">$</span>hits <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(election<span class="sc">$</span>hits <span class="sc">==</span> <span class="st">"&lt;1"</span>, <span class="dv">0</span>, <span class="fu">as.numeric</span>(election<span class="sc">$</span>hits))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in ifelse(election$hits == "&lt;1", 0, as.numeric(election$hits)): NAs
+introduced by coercion</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(election, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> hits, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assign02_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># kamala data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>kamala <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'/Users/bepi36/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/UTD/Fall2025/Data collection/assignment_2/kamala.csv'</span>, <span class="at">skip =</span> <span class="dv">1</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(kamala) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"date"</span>, <span class="st">"hits"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>kamala<span class="sc">$</span>hits <span class="ot">&lt;-</span> <span class="fu">as.character</span>(kamala<span class="sc">$</span>hits)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>kamala<span class="sc">$</span>hits <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(kamala<span class="sc">$</span>hits <span class="sc">==</span> <span class="st">"&lt;1"</span>, <span class="dv">0</span>, <span class="fu">as.numeric</span>(kamala<span class="sc">$</span>hits))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in ifelse(kamala$hits == "&lt;1", 0, as.numeric(kamala$hits)): NAs
+introduced by coercion</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(kamala, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> hits, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assign02_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># trump data </span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>trump <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'/Users/bepi36/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/UTD/Fall2025/Data collection/assignment_2/trump.csv'</span>, <span class="at">skip =</span> <span class="dv">1</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(trump) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"date"</span>, <span class="st">"hits"</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>trump<span class="sc">$</span>hits <span class="ot">&lt;-</span> <span class="fu">as.character</span>(trump<span class="sc">$</span>hits)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>trump<span class="sc">$</span>hits <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(trump<span class="sc">$</span>hits <span class="sc">==</span> <span class="st">"&lt;1"</span>, <span class="dv">0</span>, <span class="fu">as.numeric</span>(trump<span class="sc">$</span>hits))</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(trump, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> hits, <span class="at">group =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assign02_files/figure-html/unnamed-chunk-1-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The above code relies on the 3 different CSV files downloaded from Google Trends. The data is not clean and not properly formatted to be analyzed in R. As such, further data cleaning was necessary to visualize the data. Based on the graphs, we can see the trends for each term. For election, it is clear that American election seem to dominate searches with a seasonality of 4 years. Trump and Kamala present similar matches in terms of search trends, with spikes preceding elections in 2016, 2020 and 2024. Trump has higher search interest, especially for the 2016 and 2020 elections, showcasing his importance as a political candidate.</p>
+</section>
+<section id="analysis-by-gtrendsr" class="level1">
+<h1>Analysis by gtrendsR</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># analyze with gtrendsR</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># class code -----</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="do">## EPPS 6302 Methods of Data Collection and Production</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Google Trends with R</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>TrumpHarrisElection <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="fu">c</span>(<span class="st">"Trump"</span>,<span class="st">"Harris"</span>,<span class="st">"election"</span>), <span class="at">onlyInterest =</span> <span class="cn">TRUE</span>, <span class="at">geo =</span> <span class="st">"US"</span>, <span class="at">gprop =</span> <span class="st">"web"</span>, <span class="at">time =</span> <span class="st">"today+5-y"</span>, <span class="at">category =</span> <span class="dv">0</span>, ) <span class="co"># last five years</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>the_df<span class="ot">=</span>TrumpHarrisElection<span class="sc">$</span>interest_over_time</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(TrumpHarrisElection)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.
+ℹ The deprecated feature was likely used in the gtrendsR package.
+  Please report the issue at &lt;https://github.com/PMassicotte/gtrendsR/issues&gt;.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="assign02_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>tg <span class="ot">=</span> <span class="fu">gtrends</span>(<span class="st">"tariff"</span>, <span class="at">time =</span> <span class="st">"all"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Utilizing the gtrendsR package yields similar results as the manual download from google trends. Differences stand in how streamlined the process is, and the data being formatted in an R-friendly way. Substantive results are identical.</p>
 
 
 </section>
