@@ -14,6 +14,11 @@ website:
       - text: "Assignments"
         menu:
           - assign01.qmd
+          - assign02.qmd
+          - assign03.qmd
+          - assign04.qmd
+          - assign05.qmd
+          - assign06.qmd
 
 format:
   html:
