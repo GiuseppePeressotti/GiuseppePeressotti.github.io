@@ -1,0 +1,254 @@
+---
+title: "Assignment 6"
+---
+
+```{r}
+##############################################################
+
+library(quanteda)
+library(quanteda.textmodels)
+library(quanteda.textplots)
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(stringr)
+library(tibble)
+library(quanteda.textstats)
+
+
+# ------------------------------------------------------------
+# 1. Load the data
+# ------------------------------------------------------------
+
+summit <- read_csv(
+  "https://raw.githubusercontent.com/datageneration/datamethods/master/textanalytics/summit_11162021.csv"
+)
+
+# ------------------------------------------------------------
+# 2. Improved preprocessing
+# ------------------------------------------------------------
+
+clean_tweet_text <- function(x) {
+  x %>%
+    str_replace_all("http[^\\s]+", "") %>%         # URLs
+    str_replace_all("RT\\s+@\\w+:", "") %>%        # RT flag
+    str_replace_all("@\\w+", "") %>%               # remove @mentions (kept separately later)
+    str_replace_all("#", "") %>%                   # remove hash marks
+    str_replace_all("[[:punct:]]+", " ") %>%       # punctuation
+    str_squish() %>%                               # collapse whitespace
+    tolower()
+}
+
+summit <- summit %>%
+  mutate(
+    text_clean = clean_tweet_text(text),
+    text_nohash = str_replace_all(text, "#", "")
+  )
+
+# ------------------------------------------------------------
+# 3. Tokenization and dfm creation
+# ------------------------------------------------------------
+
+toks <- tokens(
+  summit$text_clean,
+  remove_punct = TRUE,
+  remove_numbers = TRUE
+) %>%
+  tokens_remove(stopwords("english")) %>%
+  tokens_remove(c("rt", "amp")) # common Twitter junk tokens
+
+dfm_sum <- dfm(toks) %>%
+  dfm_trim(min_termfreq = 5)
+
+# Top terms
+top_terms <- topfeatures(dfm_sum, 30)
+print(top_terms)
+
+# ------------------------------------------------------------
+# 4. LSA on TF–IDF weighted dfm
+# ------------------------------------------------------------
+
+dfm_tfidf <- dfm_tfidf(dfm_sum)
+lsa_model <- textmodel_lsa(dfm_tfidf, nd = 4)
+summary(lsa_model)
+
+# Document coordinates
+doc_coords <- as.data.frame(lsa_model$docs) %>%
+  rownames_to_column("doc_id") %>%
+  mutate(doc_id = as.numeric(doc_id))
+
+# Add metadata (optional)
+if ("user" %in% names(summit)) {
+  doc_coords <- doc_coords %>%
+    left_join(
+      summit %>% mutate(doc_id = row_number()) %>% select(doc_id, user),
+      by = "doc_id"
+    )
+}
+
+# ------------------------------------------------------------
+# 5. Hashtag analysis (network)
+# ------------------------------------------------------------
+
+hashtags <- tokens(
+  summit$text,
+  remove_punct = FALSE
+) %>%
+  tokens_select("#*", selection = "keep") %>%
+  dfm()
+
+top_hashtags <- topfeatures(hashtags, 30)
+print(top_hashtags)
+
+tag_fcm <- fcm(hashtags)
+top_tagnames <- names(top_hashtags)
+
+tag_fcm_sel <- fcm_select(tag_fcm, pattern = top_tagnames)
+
+textplot_network(
+  tag_fcm_sel,
+  min_freq = 20,
+  edge_alpha = 0.8,
+  edge_size = 1
+)
+
+# ------------------------------------------------------------
+# 6. User mention network (@users)
+# ------------------------------------------------------------
+
+user_tokens <- tokens(
+  summit$text,
+  remove_punct = FALSE
+) %>%
+  tokens_select("@*", selection = "keep")
+
+user_dfm <- dfm(user_tokens)
+top_users <- topfeatures(user_dfm, 30)
+
+user_fcm <- fcm(user_dfm)
+user_fcm_sel <- fcm_select(user_fcm, names(top_users))
+
+textplot_network(
+  user_fcm_sel,
+  min_freq = 10,
+  edge_alpha = 0.8
+)
+
+# ------------------------------------------------------------
+# 7. Save output files
+# ------------------------------------------------------------
+
+save_path <- "/Users/bepi36/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/UTD/Fall2025/Data collection/assignment_6/"
+
+write_rds(dfm_sum, paste0(save_path, "dfm_summit.rds"))
+write_csv(doc_coords, paste0(save_path, "lsa_document_coords.csv"))
+
+message("Files saved successfully to:")
+message(save_path)
+
+##############################################################
+
+
+```
+
+
+```{r}
+# Analyzing 3 different eras
+
+
+
+# -------------------------
+# 1. Define historical eras
+# -------------------------
+
+inaug <- data_corpus_inaugural
+
+inaug$Era <- case_when(
+  inaug$Year <= 1865 ~ "Early Republic",
+  inaug$Year > 1865 & inaug$Year <= 1945 ~ "Industrial/Progressive",
+  inaug$Year > 1945 & inaug$Year <= 1991 ~ "Cold War",
+  inaug$Year > 1991 ~ "Modern"
+)
+
+# -------------------------
+# 2. Construct DFM by Era
+# -------------------------
+
+dfm_era <- tokens(inaug, remove_punct = TRUE) %>%
+  tokens_remove(stopwords("english")) %>%
+  dfm() %>%
+  dfm_group(groups = inaug$Era) %>%
+  dfm_trim(min_termfreq = 10)
+
+# -------------------------
+# 3. Compare eras using keyness
+#    Example: Modern vs. Early Republic
+# -------------------------
+
+key_era <- textstat_keyness(dfm_era, target = "Modern")
+
+textplot_keyness(key_era, n = 20)
+
+# -------------------------
+# 4. Compare frequency of ideological terms over eras
+# -------------------------
+
+focus_terms <- c("freedom", "war", "economy", "people", "nation")
+
+dfm_rel <- dfm_weight(dfm_era, scheme = "prop") * 100  
+
+# Add Era docvar
+docvars(dfm_rel, "Era") <- docnames(dfm_rel)
+
+freq_rel <- textstat_frequency(dfm_rel, groups = docvars(dfm_rel, "Era"))
+freq_focus <- subset(freq_rel, feature %in% focus_terms)
+
+
+freq_focus <- subset(freq_rel, feature %in% focus_terms)
+
+ggplot(freq_focus, aes(x = group, y = frequency, color = feature)) +
+  geom_point(size = 3) +
+  geom_line(aes(group = feature), linewidth = 1) +
+  theme_minimal() +
+  labs(
+    title = "Change in Rhetorical Themes Across Historical Eras",
+    x = "Era",
+    y = "Relative Frequency (%)",
+    color = "Term"
+  )
+
+# -------------------------
+# 5. Top words in each era (comparison wordcloud)
+# -------------------------
+
+textplot_wordcloud(dfm_era, comparison = TRUE, max_words = 100)
+
+# -------------------------
+# 6. Measure stylistic / ideological shift using Wordfish
+# -------------------------
+
+wf <- textmodel_wordfish(dfm(tokens(inaug)), dir = c(1, 10))
+
+wf_df <- data.frame(
+  Year = inaug$Year,
+  Era  = inaug$Era,
+  Position = wf$docs
+)
+
+ggplot(wf_df, aes(x = Year, y = Position, color = Era)) +
+  geom_line(size = 1.1) +
+  geom_point(size = 2) +
+  theme_minimal() +
+  labs(
+    title = "Wordfish Ideological/Rhetorical Position Over Time",
+    y = "Estimated Wordfish Position"
+  )
+
+```
+
+
+# Comment
+
+Looking at U.S. inaugural speeches over the years, there’s a clear shift in what presidents focus on. In the early eras, like the Early Republic and Industrial/Progressive periods, speeches tended to emphasize big-picture ideas like government, power, peace, and war. The tone was more about the nation’s position in the world and the workings of the state.
+
+Over time, especially from the Cold War onward, the focus moves more toward domestic issues. Words like America, American, people, and economy show up a lot more. References to war or international conflict become less common, while talking about the country’s citizens and their well-being takes center stage. This is mostly reflected on the second graph.
