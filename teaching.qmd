@@ -2,8 +2,12 @@
 title: "Teaching"
 ---
 
-# Fall 2024
+# Undergrad Level Courses Taught - As Instructor
 
-## EPPS2301 - Research Design in the Social and Policy Sciences
+- EPPS 2301 - Research Design in the Social and Policy Sciences - [Syllabus](syllabus_EPPS2301_092724.pdf)
 
-Syllabus available [here](syllabus_EPPS2301_081724.pdf)
+- PSCI 4314 - Political Economy of East Asia - [Syllabus](syllabus_PSCI4314_042125.pdf)
+
+- PSCI 4396 - International Trade Policy - [Syllabus](syllabus_PSCI4396_120125.pdf) 
+
+- PSCI 3328 - International Relations - [Syllabus](syllabus_PSCI3328_011926.pdf)
