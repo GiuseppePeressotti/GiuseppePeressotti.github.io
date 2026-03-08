@@ -1,15 +1,51 @@
 ---
-title: "Bio"
+title: "Giuseppe Peressotti"
+image: pic1.jpg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: envelope
+      text: Email
+      href: "mailto:Giuseppe.Peressotti@utdallas.edu"
+    - icon: file-earmark-text
+      text: CV
+      href: CV_research_peressotti_jan2026.pdf
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: "https://scholar.google.com/citations?user=qdYq504AAAAJ&hl=en&oi=ao"
+    - icon: github
+      text: GitHub
+      href: "https://github.com/GiuseppePeressotti"
+    - icon: linkedin
+      text: LinkedIn
+      href: "https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/"
+    - text: Bluesky
+      href: "https://bsky.app/profile/gperessotti.bsky.social"
 ---
 
-![](pic1.jpg)
+I am a PhD candidate in Public Policy and Political Economy at the [University of Texas at Dallas](https://epps.utdallas.edu/), expected 2027. **I am on the 2026--2027 academic job market.**
 
-Welcome! I’m Giuseppe Peressotti, a 4th year PhD candidate in Public Policy and Political Economy at the University of Texas at Dallas. My research mostly focuses on International Political Economy, Trade Policy and Globalization, Digital Governance, and Civil Resistance and Democratization.
+My research focuses on **international political economy** — trade policy, digital governance, and institutional design — with a secondary field in **conflict and peace studies**, examining civil resistance and democratic transitions.
 
-More specifically, my work examines topics such as digital provisions in preferential trade agreements, the strategic choice between bilateral and mega-regional PTAs, the networked politics of emerging trade blocs, the interaction of international systems and domestic institutions, and the characteristics defining groups involved in civil resistance and the overturning of democratization processes. My recent and forthcoming publications appear in venues such as the **European Journal of International Relations** and the **Journal of Peace Research**.
+My work has been published or is forthcoming in the *European Journal of International Relations* and the *Journal of Peace Research*.
 
-I have also been teaching a number of undergrad-level courses at UTD, including International Trade Policy, Political Economy of East Asia, Research Design, and International Relations. Linking my research activity and my teaching, I am committed to producing accessible, data-driven research that contributes to the study of globalization and institutional change.
+::: {.interests}
+## Research Interests
 
-As for my personal hobbies: I love lifting weights, I am a huge espresso nerd, and I am on a quest to find all the best coffee shops/roasters from the cities I visit. I also met Faker in real life once, which is neat for those that know him.
+- Digital Trade Governance
+- Preferential Trade Agreements
+- Network Analysis of Trade
+- Civil Resistance & Democratization
+- Institutional Design
+:::
 
-You can find my CV [here](CV_research_peressotti_jan2026.pdf).
+## Recent News
+
+- **2025** — "Digital Provision Inclusion in Trade Agreements" published in *EJIR* (OnlineFirst)
+- **2025** — "Mapping the ROAD to Democracy" forthcoming in *Journal of Peace Research*
+
+## Beyond Academia
+
+When not researching, I enjoy lifting weights, hunting for the best espresso and specialty coffee shops in every city I visit, and occasionally crossing paths with esports legends.

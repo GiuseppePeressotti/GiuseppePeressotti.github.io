@@ -2,20 +2,36 @@ project:
   type: website
 
 website:
-  title: "GiuseppePeressotti.github.io"
+  title: "Giuseppe Peressotti"
   navbar:
+    background: dark
     left:
       - href: index.qmd
-        text: "Home"
+        text: Home
       - href: research.qmd
-        text: "Research"
+        text: Research
       - href: teaching.qmd
-        text: "Teaching"
+        text: Teaching
+      - href: CV_research_peressotti_jan2026.pdf
+        text: CV
+    right:
+      - icon: envelope
+        href: "mailto:Giuseppe.Peressotti@utdallas.edu"
+        aria-label: Email
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/"
+        aria-label: LinkedIn
+      - icon: github
+        href: "https://github.com/GiuseppePeressotti"
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Giuseppe Peressotti"
+    right: "Built with [Quarto](https://quarto.org/)"
 
 format:
   html:
-    theme: lux
+    theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
 
 editor: visual

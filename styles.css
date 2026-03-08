@@ -1,1 +1,73 @@
-/* css styles */
+/* Giuseppe Peressotti — Academic site styling */
+
+/* Readability */
+body {
+  line-height: 1.75;
+}
+
+/* About page photo */
+.about-entity .about-image img {
+  border: 3px solid #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* About page link buttons */
+.about-links .about-link {
+  border-color: #2c3e50 !important;
+  color: #2c3e50 !important;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.about-links .about-link:hover {
+  background-color: #2c3e50 !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.3);
+}
+
+/* Section headers */
+h2 {
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.4em;
+  margin-top: 2em;
+  color: #2c3e50;
+}
+
+/* List item spacing */
+ol li, ul li {
+  margin-bottom: 1em;
+}
+
+/* Smooth link transitions */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Research interest tags */
+.interests ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interests ul li {
+  display: inline-block;
+  background-color: #f0f4f8;
+  border: 1px solid #d1dce6;
+  border-radius: 20px;
+  padding: 0.25em 0.9em;
+  margin: 0.25em 0.15em;
+  font-size: 0.88em;
+  color: #2c3e50;
+}
+
+/* Page footer */
+.nav-footer {
+  margin-top: 3em;
+  border-top: 2px solid #e9ecef;
+}
+
+/* Navbar brand */
+.navbar .navbar-brand {
+  font-weight: 600;
+}
