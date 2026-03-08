@@ -25,26 +25,26 @@ about:
       href: "https://bsky.app/profile/gperessotti.bsky.social"
 ---
 
-I am a PhD candidate in Public Policy and Political Economy at the [University of Texas at Dallas](https://epps.utdallas.edu/), expected 2027. **I am on the 2026--2027 academic job market.**
+I am a PhD candidate in Public Policy and Political Economy at the [University of Texas at Dallas](https://epps.utdallas.edu/), expected 2027. **I will be on the 2026--2027 academic job market.**
 
 My research focuses on **international political economy** — trade policy, digital governance, and institutional design — with a secondary field in **conflict and peace studies**, examining civil resistance and democratic transitions.
 
 My work has been published or is forthcoming in the *European Journal of International Relations* and the *Journal of Peace Research*.
 
-::: {.interests}
+::: interests
 ## Research Interests
 
-- Digital Trade Governance
-- Preferential Trade Agreements
-- Network Analysis of Trade
-- Civil Resistance & Democratization
-- Institutional Design
+-   Digital Trade Governance
+-   Preferential Trade Agreements
+-   Network Analysis of Trade
+-   Civil Resistance & Democratization
+-   Institutional Design
 :::
 
 ## Recent News
 
-- **2025** — "Digital Provision Inclusion in Trade Agreements" published in *EJIR* (OnlineFirst)
-- **2025** — "Mapping the ROAD to Democracy" forthcoming in *Journal of Peace Research*
+-   **2025** — "Digital Provision Inclusion in Trade Agreements" published in *EJIR* (OnlineFirst)
+-   **2025** — "Mapping the ROAD to Democracy" forthcoming in *Journal of Peace Research*
 
 ## Beyond Academia
 
