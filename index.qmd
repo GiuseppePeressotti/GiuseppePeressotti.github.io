@@ -15,9 +15,6 @@ about:
     - icon: mortarboard-fill
       text: Google Scholar
       href: "https://scholar.google.com/citations?user=qdYq504AAAAJ&hl=en&oi=ao"
-    - icon: github
-      text: GitHub
-      href: "https://github.com/GiuseppePeressotti"
     - icon: linkedin
       text: LinkedIn
       href: "https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/"
