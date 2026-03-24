@@ -21,9 +21,6 @@ website:
       - icon: linkedin
         href: "https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/"
         aria-label: LinkedIn
-      - icon: github
-        href: "https://github.com/GiuseppePeressotti"
-        aria-label: GitHub
   page-footer:
     left: "© 2026 Giuseppe Peressotti"
     right: "Built with [Quarto](https://quarto.org/)"
