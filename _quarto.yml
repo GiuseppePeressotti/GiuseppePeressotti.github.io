@@ -3,32 +3,15 @@ project:
 
 website:
   title: "Giuseppe Peressotti"
-  navbar:
-    background: dark
-    left:
-      - href: index.qmd
-        text: Home
-      - href: research.qmd
-        text: Research
-      - href: teaching.qmd
-        text: Teaching
-      - href: CV_research_peressotti_jan2026.pdf
-        text: CV
-    right:
-      - icon: envelope
-        href: "mailto:Giuseppe.Peressotti@utdallas.edu"
-        aria-label: Email
-      - icon: linkedin
-        href: "https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/"
-        aria-label: LinkedIn
-  page-footer:
-    left: "© 2026 Giuseppe Peressotti"
-    right: "Built with [Quarto](https://quarto.org/)"
 
 format:
   html:
-    theme: cosmo
+    theme: none
     css: styles.css
     toc: false
+    page-layout: custom
+    include-in-header: _head-extras.html
+    include-before-body: _nav.html
+    include-after-body: _scripts.html
 
 editor: visual
