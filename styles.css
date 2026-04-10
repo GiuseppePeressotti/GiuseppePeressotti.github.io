@@ -464,12 +464,19 @@ footer {
   border-bottom-color: var(--accent);
 }
 
+/* ── Suppress Quarto-injected title block ── */
+h1.title, .quarto-title-block, #title-block-header { display: none !important; }
+
 /* ── Neutralize Quarto wrappers (page-layout: custom) ── */
-body > .container-fluid,
+.container-fluid,
 #quarto-content,
 #quarto-document-content,
-.quarto-container {
+main.content,
+.quarto-container,
+.page-full {
   padding: 0 !important;
   margin: 0 !important;
   max-width: none !important;
+  width: 100% !important;
+  display: block !important;
 }

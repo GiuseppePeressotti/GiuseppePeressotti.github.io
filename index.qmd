@@ -42,7 +42,7 @@ title: ""
     <section class="section reveal">
       <div class="section-label">About</div>
       <div class="about-text">
-        My research focuses on international political economy — trade policy, digital governance, and the design of international institutions — with a secondary field in conflict and peace studies, examining civil resistance and democratic transitions. My work has been published in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.
+        I study trade policy, digital governance, and international institutional design, with a second research program on civil resistance and democratic transitions. My work has been published in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.
       </div>
     </section>
 
