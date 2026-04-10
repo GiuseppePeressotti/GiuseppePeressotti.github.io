@@ -6,24 +6,32 @@
   const root        = document.documentElement;
 
   function updateToggleLabels() {
+    if (!sunLabel || !moonLabel) return;
     const isDark = root.dataset.theme === 'dark';
     sunLabel.classList.toggle('active', !isDark);
     moonLabel.classList.toggle('active', isDark);
   }
 
-  const saved = localStorage.getItem('theme');
-  if (saved) {
-    root.dataset.theme = saved;
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    root.dataset.theme = 'dark';
-  }
-  updateToggleLabels();
-
-  themeSwitch.addEventListener('click', () => {
-    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('theme', root.dataset.theme);
+  // Always read from localStorage and apply
+  (function() {
+    var saved = localStorage.getItem('theme');
+    if (saved) {
+      root.dataset.theme = saved;
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      root.dataset.theme = 'dark';
+    } else {
+      root.dataset.theme = 'light';
+    }
     updateToggleLabels();
-  });
+  })();
+
+  if (themeSwitch) {
+    themeSwitch.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', root.dataset.theme);
+      updateToggleLabels();
+    });
+  }
 
   // ── Nav scroll border ──
   const nav = document.getElementById('nav');
@@ -33,7 +41,7 @@
 
   // ── Mobile menu ──
   document.getElementById('menuBtn').addEventListener('click', () => {
-    document.getElementById('navLinks').classList.toggle('open');
+    document.getElementById('navRight').classList.toggle('open');
   });
 
   // ── Scroll reveal ──

@@ -5,36 +5,28 @@ title: ""
 ```{=html}
 <div class="page-single">
 
-  <!-- ── Header (trestles-style: photo left, info right) ── -->
+  <!-- ── Header (centered, elegant) ── -->
   <header class="header reveal">
-    <div class="header-grid">
-      <img src="pic1.jpg" alt="Giuseppe Peressotti" class="header-photo">
-      <div class="header-info">
-        <h1 class="header-name">Giuseppe Peressotti</h1>
-        <p class="header-subtitle">PhD Candidate in Public Policy &amp; Political Economy</p>
-        <p class="header-institution">The University of Texas at Dallas</p>
-        <span class="header-market">On the 2026-2027 Job Market</span>
-      </div>
-    </div>
+    <img src="pic1.jpg" alt="Giuseppe Peressotti" class="header-photo">
+    <h1 class="header-name">Giuseppe Peressotti</h1>
+    <p class="header-subtitle">PhD Candidate in Public Policy &amp; Political Economy</p>
+    <p class="header-institution">The University of Texas at Dallas</p>
+    <span class="header-market">On the 2026–2027 Job Market</span>
 
     <div class="header-links">
-      <a class="header-btn" href="mailto:Giuseppe.Peressotti@utdallas.edu">
+      <a href="mailto:Giuseppe.Peressotti@utdallas.edu">
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
         Email
       </a>
-      <a class="header-btn" href="CV_research_peressotti_jan2026.pdf">
-        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1z"/></svg>
-        CV
-      </a>
-      <a class="header-btn" href="https://scholar.google.com/citations?user=qdYq504AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
+      <a href="https://scholar.google.com/citations?user=qdYq504AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/></svg>
         Scholar
       </a>
-      <a class="header-btn" href="https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/" target="_blank" rel="noopener">
+      <a href="https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/" target="_blank" rel="noopener">
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
         LinkedIn
       </a>
-      <a class="header-btn" href="https://bsky.app/profile/gperessotti.bsky.social" target="_blank" rel="noopener">
+      <a href="https://bsky.app/profile/gperessotti.bsky.social" target="_blank" rel="noopener">
         <svg viewBox="0 0 360 320" fill="currentColor"><path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.6-5.1 0 2 0 80.2c0 18.5 10.6 155.6 17 167.8 21.6 41.4 100.3 28.2 136-8.3-61.4 83.4-141.4 59.7-166.1 21.1C-41.1 212.4 49 35.8 180 142c131-106.2 221.1 70.4 193.1 118.8-24.7 38.6-104.7 104.7-166.1 21.1 35.7 36.5 114.4 49.7 136 8.3 6.4-12.2 17-149.3 17-167.8C360 2 321.4-5.1 282 22c-41.3 29.2-85.7 88.3-102 120z"/></svg>
         Bluesky
       </a>
@@ -47,7 +39,7 @@ title: ""
     <section class="section reveal">
       <div class="section-label">About</div>
       <div class="about-text">
-        I study trade policy, digital governance, and international institutional design, with a second research program on civil resistance and democratic transitions. My work has been published in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.
+        My research focuses on international political economy — trade policy, digital governance, and the design of international institutions — with a secondary field in conflict and peace studies, examining civil resistance and democratic transitions. My work has been published in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.
       </div>
     </section>
 
