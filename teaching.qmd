@@ -1,15 +1,47 @@
 ---
-title: "Teaching"
+title: ""
 ---
 
-I have served as sole instructor of record for the following undergraduate courses at the University of Texas at Dallas.
+```{=html}
+<div class="page-single">
+  <div class="content">
 
-## Courses Taught
+    <section class="section reveal">
+      <div class="section-label">Teaching</div>
+      <div class="about-text">
+        I have served as sole instructor of record for the following undergraduate courses at the University of Texas at Dallas.
+      </div>
+    </section>
 
--   **PSCI 4396 — International Trade Policy** \| [Syllabus](syllabus_PSCI4396_120125.pdf)
+    <section class="section reveal">
+      <div class="section-subhead">Courses Taught</div>
 
--   **PSCI 4314 — Political Economy of East Asia** \| [Syllabus](syllabus_PSCI4314_042125.pdf)
+      <div class="course">
+        <div class="course-code">PSCI 4396</div>
+        <div class="course-title">International Trade Policy</div>
+        <div class="course-meta"><a href="syllabus_PSCI4396_120125.pdf">Syllabus</a></div>
+      </div>
+      <div class="course">
+        <div class="course-code">PSCI 4314</div>
+        <div class="course-title">Political Economy of East Asia</div>
+        <div class="course-meta"><a href="syllabus_PSCI4314_042125.pdf">Syllabus</a></div>
+      </div>
+      <div class="course">
+        <div class="course-code">PSCI 3328</div>
+        <div class="course-title">International Relations</div>
+        <div class="course-meta"><a href="syllabus_PSCI3328_011926.pdf">Syllabus</a></div>
+      </div>
+      <div class="course">
+        <div class="course-code">EPPS 2301</div>
+        <div class="course-title">Research Design in the Social and Policy Sciences</div>
+        <div class="course-meta"><a href="syllabus_EPPS2301_092724.pdf">Syllabus</a></div>
+      </div>
+    </section>
 
--   **PSCI 3328 — International Relations** \| [Syllabus](syllabus_PSCI3328_011926.pdf)
+  </div>
+</div>
 
--   **EPPS 2301 — Research Design in the Social and Policy Sciences** \| [Syllabus](syllabus_EPPS2301_092724.pdf)
+<footer>
+  <p class="footer-text">&copy; 2026 Giuseppe Peressotti</p>
+</footer>
+```

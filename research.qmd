@@ -1,25 +1,61 @@
 ---
-title: "Research"
+title: ""
 ---
 
-## Peer-Reviewed Publications
+```{=html}
+<div class="page-single">
+  <div class="content">
 
-1.  **Peressotti, Giuseppe** (2025). "Digital Provision Inclusion in Trade Agreements: the Death of (Digital) Distance through a Gravity Model Approach." *European Journal of International Relations*. (OnlineFirst)
+    <!-- Published -->
+    <section class="section reveal">
+      <div class="section-label">Research</div>
 
-2.  Elmore, Naela, Kashmiri Medhi, **Giuseppe Peressotti**, and Jonathan Pinckney (2025). "Mapping the ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions." *Journal of Peace Research*. (Forthcoming)
+      <div class="section-subhead">Published</div>
 
-## Working Papers
+      <div class="pub">
+        <div class="pub-title">Digital Provision Inclusion in Trade Agreements: the Death of (Digital) Distance through a Gravity Model Approach</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> (2025). <em>European Journal of International Relations</em>. <span class="pub-status">OnlineFirst</span></div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Mapping the ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</div>
+        <div class="pub-meta">Elmore, Naela, Kashmiri Medhi, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney (2025). <em>Journal of Peace Research</em>. <span class="pub-status">Forthcoming</span></div>
+      </div>
 
-1.  **Peressotti, Giuseppe**, Huei-Jyun Ye. "Why Take a Detour: The Choice Between Bilateral and Mega-PTAs."
+      <div class="section-subhead">Working Papers</div>
 
-2.  **Peressotti, Giuseppe**. "The Regionalism of Digital Globalization: a Network Analysis of Digital Provisions as part of Preferential Trade Agreements."
+      <div class="pub">
+        <div class="pub-title">Why Take a Detour: The Choice Between Bilateral and Mega-PTAs</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Huei-Jyun Ye</div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">The Regionalism of Digital Globalization: a Network Analysis of Digital Provisions as Part of Preferential Trade Agreements</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong></div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">The Impact of Intellectual Property Provisions as Part of PTAs: Can Institutional Quality be a Driver of Innovation?</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong></div>
+      </div>
 
-3.  **Peressotti, Giuseppe**. "The Impact of Intellectual Property Provisions as Part of PTAs: Can Institutional Quality be a Driver of Innovation?"
+      <div class="section-subhead">Work in Progress</div>
 
-## Work In Progress
+      <div class="pub">
+        <div class="pub-title">The Moral Economy of Informality: Trust, Reciprocity, and Entrepreneurial Coordination in Guatemala</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Ricardo R. Noe</div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Watch Your Back: Identifying Overturning Organizations in Civil Resistance Transitions</div>
+        <div class="pub-meta">Elmore, Naela, <strong>Giuseppe Peressotti</strong>, Maitreyi Pillai, Jonathan Pinckney</div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">The Determinants of Prospective BRICS+ Accession: Toward Institutional Homogeneity?</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kelvin Chun Man Chan, Minh Dao, Sadman Shafiq</div>
+      </div>
+    </section>
 
-1.  **Peressotti, Giuseppe**, Ricardo R. Noe. "The Moral Economy of Informality: Trust, Reciprocity, and Entrepreneurial Coordination in Guatemala."
+  </div>
+</div>
 
-2.  Elmore, Naela, **Giuseppe Peressotti**, Maitreyi Pillai, Jonathan Pinckney. "Watch Your Back: Identifying Overturning Organizations in Civil Resistance Transitions."
-
-3.  **Peressotti, Giuseppe**, Kelvin Chun Man Chan, Minh Dao, Sadman Shafiq. "The Determinants of Prospective BRICS+ Accession: Toward Institutional Homogeneity?"
+<footer>
+  <p class="footer-text">&copy; 2026 Giuseppe Peressotti</p>
+</footer>
+```
