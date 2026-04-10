@@ -1,48 +1,105 @@
 ---
-title: "Giuseppe Peressotti"
-image: pic1.jpg
-about:
-  template: trestles
-  image-shape: round
-  image-width: 14em
-  links:
-    - icon: envelope
-      text: Email
-      href: "mailto:Giuseppe.Peressotti@utdallas.edu"
-    - icon: file-earmark-text
-      text: CV
-      href: CV_research_peressotti_jan2026.pdf
-    - icon: mortarboard-fill
-      text: Google Scholar
-      href: "https://scholar.google.com/citations?user=qdYq504AAAAJ&hl=en&oi=ao"
-    - icon: linkedin
-      text: LinkedIn
-      href: "https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/"
-    - text: Bluesky
-      href: "https://bsky.app/profile/gperessotti.bsky.social"
+title: ""
 ---
 
-I am a PhD candidate in Public Policy and Political Economy at the [University of Texas at Dallas](https://epps.utdallas.edu/), expected 2027. **I will be on the 2026--2027 academic job market.**
+```{=html}
+<div class="page">
 
-My research focuses on **international political economy**  (trade policy, digital governance, and international organizations/institutions) with a secondary field in **conflict and peace studies**, examining civil resistance and democratic transitions.
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar reveal">
+    <img src="pic1.jpg" alt="Giuseppe Peressotti" class="sidebar-photo">
+    <h1 class="sidebar-name">Giuseppe Peressotti</h1>
+    <p class="sidebar-subtitle">PhD Candidate in Public Policy &amp; Political Economy</p>
+    <p class="sidebar-institution">The University of Texas at Dallas</p>
+    <span class="sidebar-market">On the 2026–2027 Job Market</span>
 
-My work has been published in the *European Journal of International Relations* and the *Journal of Peace Research*.
+    <div class="sidebar-divider"></div>
 
-::: interests
-## Research Interests
+    <div class="sidebar-links">
+      <a href="mailto:Giuseppe.Peressotti@utdallas.edu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Email
+      </a>
+      <a href="https://scholar.google.com/citations?user=qdYq504AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+        Scholar
+      </a>
+      <a href="https://www.linkedin.com/in/giuseppe-peressotti-57b6a614b/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://bsky.app/profile/gperessotti.bsky.social" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c3.5 3 7 6.5 7 9.5 0 2.5-1.5 3.5-3 3.5-1.5 0-2.5-1-4-3-1.5 2-2.5 3-4 3-1.5 0-3-1-3-3.5C5 10.5 8.5 7 12 4z"/></svg>
+        Bluesky
+      </a>
+    </div>
+  </aside>
 
--   Digital Trade Governance
--   Preferential Trade Agreements
--   Network Analysis
--   Civil Resistance & Democratization
--   Institutional Design
-:::
+  <!-- ── Content ── -->
+  <div class="content">
 
-## Recent News
+    <!-- About -->
+    <section class="section reveal">
+      <div class="section-label">About</div>
+      <div class="about-text">
+        My research focuses on international political economy — trade policy, digital governance, and the design of international institutions — with a secondary field in conflict and peace studies, examining civil resistance and democratic transitions. My work has been published in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.
+      </div>
+    </section>
 
--   **2025** — "Digital Provision Inclusion in Trade Agreements" published in *EJIR* (OnlineFirst)
--   **2025** — "Mapping the ROAD to Democracy" forthcoming in *Journal of Peace Research*
+    <!-- Research Interests -->
+    <section class="section reveal">
+      <div class="section-label">Research Interests</div>
+      <div class="tags">
+        <div class="tag"><span>Digital Trade Governance</span></div>
+        <div class="tag"><span>Preferential Trade Agreements</span></div>
+        <div class="tag"><span>Network Analysis</span></div>
+        <div class="tag"><span>Civil Resistance &amp; Democratization</span></div>
+        <div class="tag"><span>Institutional Design</span></div>
+      </div>
+    </section>
 
-## Beyond Academia
+    <!-- Selected Work -->
+    <section class="section reveal">
+      <div class="section-label">Selected Work</div>
+      <div>
+        <div class="section-subhead">Published</div>
+        <div class="pub">
+          <div class="pub-title">Digital Provision Inclusion in Trade Agreements: the Death of (Digital) Distance through a Gravity Model Approach</div>
+          <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> (2025). <em>European Journal of International Relations</em>. <span class="pub-status">OnlineFirst</span></div>
+        </div>
+        <div class="pub">
+          <div class="pub-title">Mapping the ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</div>
+          <div class="pub-meta">Elmore, Naela, Kashmiri Medhi, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney (2025). <em>Journal of Peace Research</em>. <span class="pub-status">Forthcoming</span></div>
+        </div>
 
-When not researching, I enjoy lifting weights, hunting the best coffee shops in the cities I visit, and nerd-out on my espresso setup at home.
+        <div class="section-subhead">Working Papers</div>
+        <div class="pub">
+          <div class="pub-title">Why Take a Detour: The Choice Between Bilateral and Mega-PTAs</div>
+          <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Huei-Jyun Ye</div>
+        </div>
+        <div class="pub">
+          <div class="pub-title">The Regionalism of Digital Globalization: a Network Analysis of Digital Provisions as Part of Preferential Trade Agreements</div>
+          <div class="pub-meta"><strong>Peressotti, Giuseppe</strong></div>
+        </div>
+        <div class="pub">
+          <div class="pub-title">The Impact of Intellectual Property Provisions as Part of PTAs: Can Institutional Quality be a Driver of Innovation?</div>
+          <div class="pub-meta"><strong>Peressotti, Giuseppe</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beyond -->
+    <section class="section reveal">
+      <div class="section-label">Beyond</div>
+      <div class="beyond-text">
+        When not researching, I enjoy lifting weights, hunting the best coffee shops in the cities I visit, and nerding out on my espresso setup at home.
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  <p class="footer-text">&copy; 2026 Giuseppe Peressotti</p>
+</footer>
+```

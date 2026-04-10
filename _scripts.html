@@ -1,0 +1,50 @@
+<script>
+  // ── Theme Toggle ──
+  const themeSwitch = document.getElementById('themeSwitch');
+  const sunLabel    = document.getElementById('sunLabel');
+  const moonLabel   = document.getElementById('moonLabel');
+  const root        = document.documentElement;
+
+  function updateToggleLabels() {
+    const isDark = root.dataset.theme === 'dark';
+    sunLabel.classList.toggle('active', !isDark);
+    moonLabel.classList.toggle('active', isDark);
+  }
+
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    root.dataset.theme = saved;
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    root.dataset.theme = 'dark';
+  }
+  updateToggleLabels();
+
+  themeSwitch.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', root.dataset.theme);
+    updateToggleLabels();
+  });
+
+  // ── Nav scroll border ──
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  // ── Mobile menu ──
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  // ── Scroll reveal ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
