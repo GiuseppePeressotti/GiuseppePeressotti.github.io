@@ -3,19 +3,17 @@ title: ""
 ---
 
 ```{=html}
-<div class="page">
+<div class="page-single">
 
-  <!-- ── Sidebar ── -->
-  <aside class="sidebar reveal">
-    <img src="pic1.jpg" alt="Giuseppe Peressotti" class="sidebar-photo">
-    <h1 class="sidebar-name">Giuseppe Peressotti</h1>
-    <p class="sidebar-subtitle">PhD Candidate in Public Policy &amp; Political Economy</p>
-    <p class="sidebar-institution">The University of Texas at Dallas</p>
-    <span class="sidebar-market">On the 2026–2027 Job Market</span>
+  <!-- ── Header ── -->
+  <header class="header reveal">
+    <img src="pic1.jpg" alt="Giuseppe Peressotti" class="header-photo">
+    <h1 class="header-name">Giuseppe Peressotti</h1>
+    <p class="header-subtitle">PhD Candidate in Public Policy &amp; Political Economy</p>
+    <p class="header-institution">The University of Texas at Dallas</p>
+    <span class="header-market">On the 2026–2027 Job Market</span>
 
-    <div class="sidebar-divider"></div>
-
-    <div class="sidebar-links">
+    <div class="header-links">
       <a href="mailto:Giuseppe.Peressotti@utdallas.edu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
         Email
@@ -33,9 +31,8 @@ title: ""
         Bluesky
       </a>
     </div>
-  </aside>
+  </header>
 
-  <!-- ── Content ── -->
   <div class="content">
 
     <!-- About -->
