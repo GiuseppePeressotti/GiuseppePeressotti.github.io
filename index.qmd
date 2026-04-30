@@ -43,7 +43,7 @@ title: ""
     <section class="section reveal">
       <div class="section-label">About</div>
       <div class="about-text">
-        I am a PhD Candidate in Public Policy and Political Economy at the University of Texas at Dallas. My research in International Political Economy centers on trade policy and globalization: the design of preferential trade agreements, the diffusion of digital provisions through trade, and the role of regionalism and international organizations in shaping digital governance. A second strand examines civil resistance and political conflict, with work on democratic transitions, democratic backsliding, and the coalition dynamics that drive regime change.
+        I am a PhD Candidate in Public Policy and Political Economy at the University of Texas at Dallas. My International Political Economy research takes up the institutional architecture of globalization: why states choose bilateral, multilateral, or mega-regional pathways for economic cooperation, how digital and intellectual property rules diffuse through networks of preferential trade agreements, when international commitments acquire domestic bite, and how great-power rivalry shapes the fate of international treaties. A connected line of work examines institutional change and political conflict, with projects on civil resistance and democratic transitions, the organizational ecology behind regime overturning attempts, and informal entrepreneurship in Guatemala. Methodologically, the agenda combines gravity estimation, network analysis of treaty texts, and original dataset construction, including the ROAD data on civil-resistance overturning organizations. Fellowships and affiliations with the Mercatus Center, the Institute for Humane Studies, and Sogang University ground the work in trade economics and East Asian political economy. My work appears in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.
       </div>
     </section>
 
@@ -51,11 +51,11 @@ title: ""
     <section class="section reveal">
       <div class="section-label">Research Interests</div>
       <div class="tags">
-        <div class="tag"><span>Digital Trade Governance</span></div>
-        <div class="tag"><span>Preferential Trade Agreements</span></div>
-        <div class="tag"><span>Network Analysis</span></div>
-        <div class="tag"><span>Civil Resistance &amp; Democratization</span></div>
-        <div class="tag"><span>Institutional Design</span></div>
+        <div class="tag"><span>International Political Economy</span></div>
+        <div class="tag"><span>Trade Policy &amp; Globalization</span></div>
+        <div class="tag"><span>Digital Governance</span></div>
+        <div class="tag"><span>Institutional Change &amp; Democratization</span></div>
+        <div class="tag"><span>Civil Resistance &amp; Political Conflict</span></div>
       </div>
     </section>
 
