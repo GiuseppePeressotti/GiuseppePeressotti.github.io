@@ -411,6 +411,28 @@ nav.scrolled { border-bottom-color: var(--border); }
   font-weight: 500;
   color: var(--accent);
 }
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.pub-link {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  border: 1px solid var(--tag-border);
+  border-radius: 4px;
+  padding: 0.18rem 0.55rem;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+.pub-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-faint);
+}
 .section-subhead {
   font-size: 0.75rem;
   font-weight: 550;

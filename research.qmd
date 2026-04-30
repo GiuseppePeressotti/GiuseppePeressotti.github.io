@@ -14,10 +14,16 @@ title: "Research"
       <div class="pub">
         <div class="pub-title">Mapping the ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</div>
         <div class="pub-meta">Elmore, Naela, Kashmiri Medhi, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney (2026). <em>Journal of Peace Research</em>. <span class="pub-status">Online Early</span></div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://doi.org/10.1093/jopres/xjag002" target="_blank" rel="noopener">DOI</a>
+        </div>
       </div>
       <div class="pub">
         <div class="pub-title">Digital Provision Inclusion in Trade Agreements: the Death of (Digital) Distance through a Gravity Model Approach</div>
         <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> (2025). <em>European Journal of International Relations</em>. <span class="pub-status">OnlineFirst</span></div>
+        <div class="pub-links">
+          <a class="pub-link" href="https://doi.org/10.1177/13540661251367340" target="_blank" rel="noopener">DOI</a>
+        </div>
       </div>
 
       <div class="section-subhead">Working Papers</div>
@@ -52,13 +58,6 @@ title: "Research"
       <div class="pub">
         <div class="pub-title">Competing to Negotiate: How Rivalry Shapes the Fate of International Treaties</div>
         <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Huei-Jyun Ye</div>
-      </div>
-
-      <div class="section-subhead">Book Reviews</div>
-
-      <div class="pub">
-        <div class="pub-title">Review of <em>Digital Empires: The Global Battle to Regulate Technology</em> by Anu Bradford</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> (2024). <em>LSE Review of Books</em> (June 17). <a href="https://blogs.lse.ac.uk/lsereviewofbooks/2024/06/17/book-review-digital-empires-the-global-battle-to-regulate-technology-anu-bradford" target="_blank" rel="noopener">Link</a></div>
       </div>
 
     </section>
