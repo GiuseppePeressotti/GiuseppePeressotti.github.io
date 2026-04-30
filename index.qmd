@@ -45,6 +45,7 @@ title: ""
       <div class="about-text">
         <p>I am a PhD Candidate in Public Policy and Political Economy at the University of Texas at Dallas. My research in International Political Economy relates to the design of preferential trade agreements, the diffusion of digital provisions through trade policy, and the role of regionalism and international organizations in shaping digital governance. I also study institutional change, political conflict, and democratic backsliding, linking political economy to regime dynamics and coalition formation. My work has been published in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.</p>
         <p>At UT Dallas I have served as instructor of record for four undergraduate courses: International Relations, Political Economy of East Asia, Research Design in the Social Sciences, and International Trade Policy, the last of which I designed from the ground up. I hold a Graduate Teaching Certificate (2024) and was nominated for UT Dallas's 2026 President's Teaching Excellence Award.</p>
+        <p>In my spare time I enjoy lifting weights, go for a hike (sigh for living in Dallas...) and nerd out on my amazing espresso setup at home.</p>
       </div>
     </section>
 
@@ -57,14 +58,6 @@ title: ""
         <div class="tag"><span>Digital Governance</span></div>
         <div class="tag"><span>Institutional Change &amp; Democratization</span></div>
         <div class="tag"><span>Civil Resistance &amp; Political Conflict</span></div>
-      </div>
-    </section>
-
-    <!-- Beyond -->
-    <section class="section reveal">
-      <div class="section-label">Beyond</div>
-      <div class="beyond-text">
-        When not researching, I enjoy lifting weights, hunting the best coffee shops in the cities I visit, and nerding out on my espresso setup at home.
       </div>
     </section>
 

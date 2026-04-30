@@ -9,7 +9,7 @@ title: "Research"
     <section class="section reveal">
       <div class="section-label">Research</div>
 
-      <div class="section-subhead">Peer-Reviewed Publications</div>
+      <div class="section-subhead section-subhead--published">Peer-Reviewed Publications</div>
 
       <div class="pub">
         <div class="pub-title">Mapping the ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</div>
@@ -26,7 +26,7 @@ title: "Research"
         </div>
       </div>
 
-      <div class="section-subhead">Working Papers</div>
+      <div class="section-subhead section-subhead--working">Working Papers</div>
 
       <div class="pub">
         <div class="pub-title">Why Take a Detour: The Strategic Choice Between Bilateral and Multilateral PTAs</div>
@@ -54,7 +54,7 @@ title: "Research"
         <div class="pub-note">Abstract coming soon</div>
       </div>
 
-      <div class="section-subhead">Work in Progress</div>
+      <div class="section-subhead section-subhead--wip">Work in Progress</div>
 
       <div class="pub">
         <div class="pub-title">Making Commitments Bite: Institutional Capacity and the Domestic Effects of International IP Rules</div>
