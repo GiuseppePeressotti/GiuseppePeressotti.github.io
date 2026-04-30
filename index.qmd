@@ -18,6 +18,10 @@ title: ""
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
         Email
       </a>
+      <a href="CV_research_peressotti_apr2026.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.414A2 2 0 0 0 13.414 3L11 .586A2 2 0 0 0 9.586 0H4Zm0 1.5h5V4a1 1 0 0 0 1 1h2.5v9a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 .5-.5Zm1 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5A.5.5 0 0 1 5 8Zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Z"/></svg>
+        CV
+      </a>
       <a href="https://scholar.google.com/citations?user=qdYq504AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">
         <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/><path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/></svg>
         Scholar
@@ -44,7 +48,7 @@ title: ""
       <div class="section-label">About</div>
       <div class="about-text">
         <p>I am a PhD Candidate in Public Policy and Political Economy at the University of Texas at Dallas. My research in International Political Economy relates to the design of preferential trade agreements, the diffusion of digital provisions through trade policy, and the role of regionalism and international organizations in shaping digital governance. I also study institutional change, political conflict, and democratic backsliding, linking political economy to regime dynamics and coalition formation. My work has been published in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>.</p>
-        <p>At UT Dallas I have served as instructor of record for four undergraduate courses: International Relations, Political Economy of East Asia, Research Design in the Social Sciences, and International Trade Policy, the last of which I designed from the ground up. I hold a Graduate Teaching Certificate (2024) and was nominated for UT Dallas's 2026 President's Teaching Excellence Award.</p>
+        <p>At UT Dallas I have served as instructor of record for four undergraduate courses: International Relations, Political Economy of East Asia, Research Design in the Social Sciences, and International Trade Policy, the last of which I designed from the ground up. I completed the Graduate Teaching Certificate (2024).</p>
         <p>In my spare time I enjoy lifting weights, go for a hike (sigh for living in Dallas...) and nerd out on my amazing espresso setup at home.</p>
       </div>
     </section>

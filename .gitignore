@@ -16,3 +16,6 @@ _site/
 _progress.md
 decision_log.md
 PHASES.md
+
+# Local fetch cache
+_webcache/

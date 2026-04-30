@@ -9,12 +9,13 @@ title: "Teaching"
     <section class="section reveal">
       <div class="section-label">Teaching</div>
       <div class="about-text">
-        I have served as sole instructor of record for the following undergraduate courses at the University of Texas at Dallas.
+        <p>I have served as sole instructor of record for four undergraduate courses at the University of Texas at Dallas, in addition to teaching assistant and guest lecturer roles at UT Dallas and Sogang University. I completed the Graduate Teaching Certificate (UT Dallas, 2024).</p>
       </div>
     </section>
 
     <section class="section reveal">
-      <div class="section-subhead">Courses Taught</div>
+
+      <div class="section-subhead section-subhead--published">Courses Taught</div>
 
       <div class="course">
         <div class="course-code">PSCI 4396</div>
@@ -36,6 +37,57 @@ title: "Teaching"
         <div class="course-title">Research Design in the Social and Policy Sciences</div>
         <div class="course-meta"><a href="syllabus_EPPS2301_092724.pdf">Syllabus</a></div>
       </div>
+
+      <div class="section-subhead section-subhead--working">Guest Lecturer</div>
+
+      <div class="course">
+        <div class="course-title">Comparative Politics &mdash; Lecture on South Korea, for Naela Elmore</div>
+        <div class="course-meta">UT Dallas &middot; Spring 2023</div>
+      </div>
+
+      <div class="section-subhead section-subhead--working">Teaching Assistant</div>
+
+      <div class="course">
+        <div class="course-title">Political Behavior, for Curtis Bram</div>
+        <div class="course-meta">UT Dallas &middot; Spring 2024</div>
+      </div>
+      <div class="course">
+        <div class="course-title">The Political Economy of Multinational Corporations, for Clint Peinhardt</div>
+        <div class="course-meta">UT Dallas &middot; Spring 2023</div>
+      </div>
+      <div class="course">
+        <div class="course-title">Global Politics, for Clint Peinhardt</div>
+        <div class="course-meta">UT Dallas &middot; Fall 2022, Fall 2023</div>
+      </div>
+      <div class="course">
+        <div class="course-title">International Trade Policy, for Inbom Choi</div>
+        <div class="course-meta">Sogang University &middot; Spring 2021</div>
+      </div>
+      <div class="course">
+        <div class="course-title">Topical Seminar: Valuation, for Yukyung Kim</div>
+        <div class="course-meta">Sogang University &middot; Spring 2021</div>
+      </div>
+      <div class="course">
+        <div class="course-title">International Economic Analysis, for Heo Yoon</div>
+        <div class="course-meta">Sogang University &middot; Spring 2021</div>
+      </div>
+      <div class="course">
+        <div class="course-title">Topical Seminar: USA and Two Koreas, for Jinwoo Kim</div>
+        <div class="course-meta">Sogang University &middot; Fall 2020</div>
+      </div>
+      <div class="course">
+        <div class="course-title">Regional Economic Integration, for Inbom Choi</div>
+        <div class="course-meta">Sogang University &middot; Fall 2020</div>
+      </div>
+      <div class="course">
+        <div class="course-title">International Business Strategy, for Dohoon Kim</div>
+        <div class="course-meta">Sogang University &middot; Fall 2020</div>
+      </div>
+      <div class="course">
+        <div class="course-title">Financial Institutions and Systems, for Yukyung Kim</div>
+        <div class="course-meta">Sogang University &middot; Fall 2020</div>
+      </div>
+
     </section>
 
   </div>
