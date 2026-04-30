@@ -26,7 +26,7 @@ title: "Research"
         </div>
       </div>
 
-      <div class="section-subhead section-subhead--working">Working Papers</div>
+      <div class="section-subhead section-subhead--published">Working Papers</div>
 
       <div class="pub">
         <div class="pub-title">Why Take a Detour: The Strategic Choice Between Bilateral and Multilateral PTAs</div>
@@ -54,7 +54,7 @@ title: "Research"
         <div class="pub-note">Abstract coming soon</div>
       </div>
 
-      <div class="section-subhead section-subhead--wip">Work in Progress</div>
+      <div class="section-subhead section-subhead--published">Work in Progress</div>
 
       <div class="pub">
         <div class="pub-title">Making Commitments Bite: Institutional Capacity and the Domestic Effects of International IP Rules</div>
