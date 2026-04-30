@@ -353,6 +353,7 @@ nav.scrolled { border-bottom-color: var(--border); }
   line-height: 1.8;
 }
 .about-text em { font-style: italic; }
+.about-text p + p { margin-top: 1rem; }
 
 /* ── Tags ── */
 .tags {
