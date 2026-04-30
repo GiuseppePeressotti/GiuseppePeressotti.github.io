@@ -1,0 +1,48 @@
+---
+title: "Data & Tools"
+---
+
+```{=html}
+<div class="page-single">
+  <div class="content">
+
+    <section class="section reveal">
+      <div class="section-label">Data &amp; Tools</div>
+      <div class="about-text">
+        This page will host replication archives, original datasets, and small tools that come out of my research. <span class="pub-status">Work in Progress</span>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-subhead">Datasets</div>
+      <div class="pub">
+        <div class="pub-title">ROAD: Overturning Attempts and Organizations in Civil Resistance Transitions</div>
+        <div class="pub-meta">A global dataset of overturning attempts and organizations during civil resistance transitions. Companion to Elmore, Medhi, Peressotti, &amp; Pinckney (2026), <em>Journal of Peace Research</em>. <span class="pub-status">Coming soon</span></div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Digital Provisions in Preferential Trade Agreements</div>
+        <div class="pub-meta">Coded inventory of digital provisions across PTAs, used in the EJIR (2025) gravity paper and the network-analysis working paper. <span class="pub-status">Coming soon</span></div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-subhead">Replication Archives</div>
+      <div class="about-text">
+        Replication code and data for published papers will be linked here as repositories are released.
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-subhead">Tools</div>
+      <div class="about-text">
+        Small R utilities and reproducible workflows from ongoing projects, posted as they stabilize.
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  <p class="footer-text">&copy; 2026 Giuseppe Peressotti</p>
+</footer>
+```

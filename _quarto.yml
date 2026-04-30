@@ -1,5 +1,11 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!_progress.md"
+    - "!decision_log.md"
+    - "!PHASES.md"
+    - "!README.md"
 
 website:
   title: "Giuseppe Peressotti"

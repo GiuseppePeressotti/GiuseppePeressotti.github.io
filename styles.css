@@ -189,8 +189,8 @@ nav.scrolled { border-bottom-color: var(--border); }
   transition: border-color 0.4s ease;
 }
 .header-photo {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #E4E2DD;
@@ -484,7 +484,7 @@ footer {
     gap: 0.5rem 1rem;
   }
 
-  .header-photo { width: 100px; height: 100px; }
+  .header-photo { width: 140px; height: 140px; }
   .header-name { font-size: 1.75rem; }
   .header-links { gap: 1rem; }
 

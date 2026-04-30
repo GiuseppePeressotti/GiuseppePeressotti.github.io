@@ -11,3 +11,8 @@ _site/
 .DS_Store
 .aidesigner/*
 !.aidesigner/.gitkeep
+
+# Internal project logs (not published)
+_progress.md
+decision_log.md
+PHASES.md

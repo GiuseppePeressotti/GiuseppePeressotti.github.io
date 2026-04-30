@@ -6,50 +6,61 @@ title: "Research"
 <div class="page-single">
   <div class="content">
 
-    <!-- Published -->
     <section class="section reveal">
       <div class="section-label">Research</div>
 
-      <div class="section-subhead">Published</div>
+      <div class="section-subhead">Peer-Reviewed Publications</div>
 
+      <div class="pub">
+        <div class="pub-title">Mapping the ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</div>
+        <div class="pub-meta">Elmore, Naela, Kashmiri Medhi, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney (2026). <em>Journal of Peace Research</em>. <span class="pub-status">Online Early</span></div>
+      </div>
       <div class="pub">
         <div class="pub-title">Digital Provision Inclusion in Trade Agreements: the Death of (Digital) Distance through a Gravity Model Approach</div>
         <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> (2025). <em>European Journal of International Relations</em>. <span class="pub-status">OnlineFirst</span></div>
-      </div>
-      <div class="pub">
-        <div class="pub-title">Mapping the ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</div>
-        <div class="pub-meta">Elmore, Naela, Kashmiri Medhi, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney (2025). <em>Journal of Peace Research</em>. <span class="pub-status">Forthcoming</span></div>
       </div>
 
       <div class="section-subhead">Working Papers</div>
 
       <div class="pub">
-        <div class="pub-title">Why Take a Detour: The Choice Between Bilateral and Mega-PTAs</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Huei-Jyun Ye</div>
+        <div class="pub-title">Why Take a Detour: The Strategic Choice Between Bilateral and Multilateral PTAs</div>
+        <div class="pub-meta">Ye, Huei-Jyun and <strong>Giuseppe Peressotti</strong>. Presented at ISA 2025, IHS Papers Workshop 2025, WPS UTD 2025, MPSA 2026.</div>
       </div>
       <div class="pub">
-        <div class="pub-title">The Regionalism of Digital Globalization: a Network Analysis of Digital Provisions as Part of Preferential Trade Agreements</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong></div>
+        <div class="pub-title">Rulemakers and Ruletakers in Digital Trade Governance: Network Structure and the Diffusion of Digital Provisions in Preferential Trade Agreements</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at IHS Proposal Workshop 2025, ISA 2026.</div>
       </div>
       <div class="pub">
-        <div class="pub-title">The Impact of Intellectual Property Provisions as Part of PTAs: Can Institutional Quality be a Driver of Innovation?</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong></div>
+        <div class="pub-title">Entrepreneurship, Informal, and Formal Markets: A Humanomics Study of Guatemala</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Ricardo R. Noé. Presented at PCS 2026.</div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Watch Your Back: Identifying Overturning Organizations in Civil Resistance Transitions</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kashmiri Medhi, Naela Elmore, and Jonathan Pinckney. Presented at ISA 2026.</div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Signaling Anti-Western Positioning: Regime Type, Alignment, and the Surge in Interest for the BRICS</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kelvin Chun-Man Chan, Minh Dao, Sadman Shafiq, Charles Alexander Weimer, and Tiziano Cecconato. Presented at MPSA 2026.</div>
       </div>
 
       <div class="section-subhead">Work in Progress</div>
 
       <div class="pub">
-        <div class="pub-title">The Moral Economy of Informality: Trust, Reciprocity, and Entrepreneurial Coordination in Guatemala</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Ricardo R. Noe</div>
+        <div class="pub-title">Making Commitments Bite: Institutional Capacity and the Domestic Effects of International IP Rules</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at GSIPE 2025, ISA 2025.</div>
       </div>
       <div class="pub">
-        <div class="pub-title">Watch Your Back: Identifying Overturning Organizations in Civil Resistance Transitions</div>
-        <div class="pub-meta">Elmore, Naela, <strong>Giuseppe Peressotti</strong>, Maitreyi Pillai, Jonathan Pinckney</div>
+        <div class="pub-title">Competing to Negotiate: How Rivalry Shapes the Fate of International Treaties</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Huei-Jyun Ye</div>
       </div>
+
+      <div class="section-subhead">Book Reviews</div>
+
       <div class="pub">
-        <div class="pub-title">The Determinants of Prospective BRICS+ Accession: Toward Institutional Homogeneity?</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kelvin Chun Man Chan, Minh Dao, Sadman Shafiq</div>
+        <div class="pub-title">Review of <em>Digital Empires: The Global Battle to Regulate Technology</em> by Anu Bradford</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> (2024). <em>LSE Review of Books</em> (June 17). <a href="https://blogs.lse.ac.uk/lsereviewofbooks/2024/06/17/book-review-digital-empires-the-global-battle-to-regulate-technology-anu-bradford" target="_blank" rel="noopener">Link</a></div>
       </div>
+
     </section>
 
   </div>
