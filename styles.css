@@ -433,6 +433,12 @@ nav.scrolled { border-bottom-color: var(--border); }
   border-color: var(--accent);
   background: var(--accent-faint);
 }
+.pub-note {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--text-tertiary);
+  margin-top: 0.4rem;
+}
 .section-subhead {
   font-size: 0.75rem;
   font-weight: 550;
