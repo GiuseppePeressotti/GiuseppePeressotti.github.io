@@ -47,6 +47,10 @@ title: ""
         <p>At UT Dallas I have served as instructor of record for four undergraduate courses: International Relations, Political Economy of East Asia, Research Design in the Social Sciences, and International Trade Policy, the last of which I designed from the ground up.</p>
         <p>Before starting my PhD, I completed a Master of International Studies in International Trade from Sogang University (Seoul, South Korea), and my BA in East Asian Studies from Ca' Foscari University of Venice.</p>
         <p>In my spare time I enjoy lifting weights, go for a hike (sigh for living in Dallas...) and nerd out on my amazing espresso setup at home.</p>
+        <figure class="espresso-figure">
+          <img src="station.jpeg" alt="Home espresso station" class="espresso-photo">
+          <figcaption>My aforementioned home-espresso station</figcaption>
+        </figure>
       </div>
     </section>
 
