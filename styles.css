@@ -599,9 +599,15 @@ footer {
   background: none;
   cursor: pointer;
   color: var(--text);
-  padding: 4px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
 }
-.nav-menu-btn svg { width: 20px; height: 20px; }
+.nav-menu-btn:hover { background: var(--accent-faint); }
+.nav-menu-btn svg { width: 24px; height: 24px; }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
@@ -622,11 +628,14 @@ footer {
     gap: 0.5rem 1rem;
   }
 
-  .header-photo { width: 140px; height: 140px; }
-  .header-name { font-size: 1.75rem; }
-  .header-links { gap: 1rem; }
+  .header { padding-bottom: 2rem; margin-bottom: 1.25rem; }
+  .header-photo { width: 132px; height: 132px; margin-bottom: 1.1rem; }
+  .header-name { font-size: 2rem; }
+  .header-subtitle { max-width: 320px; margin-left: auto; margin-right: auto; }
+  .header-links { gap: 0.75rem 1.25rem; margin-top: 1.35rem; }
+  .header-links a { min-height: 44px; }
 
-  .nav-inner { padding: 0 1.5rem; }
+  .nav-inner { padding: 0 1rem 0 1.25rem; }
   .nav-right { display: none; }
   .nav-right.open {
     display: flex;
@@ -638,17 +647,34 @@ footer {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem 1.25rem;
     gap: 1rem;
     align-items: flex-start;
   }
   .nav-right.open .nav-links {
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0;
+    width: 100%;
   }
-  .nav-menu-btn { display: block; }
+  .nav-right.open .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    width: 100%;
+    font-size: 0.875rem;
+  }
+  .nav-menu-btn { display: flex; }
+
+  .theme-switch-wrap { min-height: 44px; }
 
   .page-single { padding: 2.5rem 1.5rem 2rem; }
+
+  .section { padding: 1.75rem 0; }
+  .about-text { font-size: 0.925rem; line-height: 1.72; }
+  .pub, .course { padding-left: 0.4rem; }
+  .pub-title, .pub-meta, .course-title { overflow-wrap: anywhere; }
+  .wip-banner { padding: 3.25rem 1.25rem; }
+  .wip-banner-title { font-size: 2.1rem; }
 
   footer { padding: 1.5rem; }
 }
@@ -658,6 +684,35 @@ footer {
   max-width: 720px;
   margin: 0 auto;
   padding: 3.5rem 2rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .page-single { padding: 2.5rem 1.5rem 2rem; }
+
+  .espresso-figure {
+    width: min(100%, 260px);
+    margin-top: 1.5rem;
+  }
+  .espresso-photo,
+  .espresso-figure figcaption { width: 100%; }
+}
+
+@media (max-width: 420px) {
+  .page-single { padding: 2rem 1.125rem 1.5rem; }
+  .nav-brand { font-size: 0.875rem; }
+  .header-name { font-size: 1.85rem; }
+  .section-subhead--published { font-size: 1.35rem; }
+  .tag { font-size: 0.78rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
 }
 
 /* ── Course entries ── */

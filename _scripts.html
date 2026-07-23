@@ -6,10 +6,12 @@
   const root        = document.documentElement;
 
   function updateToggleLabels() {
-    if (!sunLabel || !moonLabel) return;
+    if (!sunLabel || !moonLabel || !themeSwitch) return;
     const isDark = root.dataset.theme === 'dark';
     sunLabel.classList.toggle('active', !isDark);
     moonLabel.classList.toggle('active', isDark);
+    themeSwitch.setAttribute('aria-checked', String(isDark));
+    themeSwitch.setAttribute('aria-label', isDark ? 'Use light theme' : 'Use dark theme');
   }
 
   // Always read from localStorage and apply
@@ -40,19 +42,45 @@
   }, { passive: true });
 
   // ── Mobile menu ──
-  document.getElementById('menuBtn').addEventListener('click', () => {
-    document.getElementById('navRight').classList.toggle('open');
+  const menuBtn = document.getElementById('menuBtn');
+  const navRight = document.getElementById('navRight');
+
+  function setMenuOpen(isOpen) {
+    navRight.classList.toggle('open', isOpen);
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+    menuBtn.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+  }
+
+  menuBtn.addEventListener('click', () => {
+    setMenuOpen(!navRight.classList.contains('open'));
   });
 
-  // ── Scroll reveal ──
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+  navRight.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setMenuOpen(false));
+  });
 
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setMenuOpen(false);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) setMenuOpen(false);
+  }, { passive: true });
+
+  // ── Scroll reveal ──
+  const revealElements = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+    revealElements.forEach((el) => observer.observe(el));
+  } else {
+    revealElements.forEach((el) => el.classList.add('visible'));
+  }
 </script>
