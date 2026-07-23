@@ -16,6 +16,7 @@ title: "Research"
         <div class="pub-meta">Elmore, Naela, Kashmiri Medhi, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney (2026). <em>Journal of Peace Research</em>, 63(3), 495–503.</div>
         <div class="pub-links">
           <a class="pub-link" href="https://doi.org/10.1093/jopres/xjag002" target="_blank" rel="noopener">DOI</a>
+          <a class="pub-link" href="https://www.prio.org/journals/jpr/replicationdata" target="_blank" rel="noopener">Replication package</a>
         </div>
       </div>
       <div class="pub">
@@ -23,6 +24,7 @@ title: "Research"
         <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> (2025). <em>European Journal of International Relations</em>. <span class="pub-status">OnlineFirst</span></div>
         <div class="pub-links">
           <a class="pub-link" href="https://doi.org/10.1177/13540661251367340" target="_blank" rel="noopener">DOI</a>
+          <a class="pub-link" href="https://github.com/GiuseppePeressotti/peressotti-2025-digital-provisions-replicate" target="_blank" rel="noopener">Replication package</a>
         </div>
       </div>
 
