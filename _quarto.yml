@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - CV_research_peressotti_august2026.pdf
   render:
     - "*.qmd"
     - "!_progress.md"
