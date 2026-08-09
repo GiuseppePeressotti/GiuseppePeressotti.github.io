@@ -46,22 +46,11 @@ title: ""
       </div>
     </section>
 
-    <!-- Research Interests -->
-    <section class="section reveal">
-      <div class="section-label">Research Interests</div>
-      <div class="tags">
-        <div class="tag"><span>International Political Economy</span></div>
-        <div class="tag"><span>Trade Policy &amp; Globalization</span></div>
-        <div class="tag"><span>Digital Governance</span></div>
-        <div class="tag"><span>Institutional Change &amp; Democratization</span></div>
-        <div class="tag"><span>Civil Resistance &amp; Political Conflict</span></div>
-      </div>
-    </section>
-
   </div>
 </div>
 
 <footer>
+  <p class="footer-text"><a class="pub-link" href="mailto:Giuseppe.Peressotti@utdallas.edu">Contact me</a></p>
   <p class="footer-text">&copy; 2026 Giuseppe Peressotti</p>
 </footer>
 ```

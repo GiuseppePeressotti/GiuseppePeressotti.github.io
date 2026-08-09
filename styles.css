@@ -488,18 +488,32 @@ nav.scrolled { border-bottom-color: var(--border); }
 }
 .pub-abstract summary {
   display: inline-block;
-  cursor: pointer;
+  font-family: inherit;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--text-secondary);
-  border-bottom: 1px solid var(--tag-border);
-  transition: color 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--tag-border);
+  border-radius: 4px;
+  padding: 0.18rem 0.55rem;
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+.pub-abstract summary::-webkit-details-marker { display: none; }
+.pub-abstract summary::after {
+  content: '▾';
+  display: inline-block;
+  margin-left: 0.35rem;
+  transition: transform 0.2s ease;
 }
 .pub-abstract summary:hover {
   color: var(--accent);
   border-color: var(--accent);
+  background: var(--accent-faint);
 }
+.pub-abstract[open] summary::after { transform: rotate(180deg); }
 .pub-abstract p {
   margin-top: 0.5rem;
   font-size: 0.8125rem;
