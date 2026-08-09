@@ -81,7 +81,6 @@ title: "Research"
 </div>
 
 <footer>
-  <p class="footer-text"><a class="pub-link" href="mailto:Giuseppe.Peressotti@utdallas.edu">Contact me</a></p>
-  <p class="footer-text">&copy; 2026 Giuseppe Peressotti</p>
+  <p class="footer-text"><a class="pub-link" href="mailto:Giuseppe.Peressotti@utdallas.edu">Contact me</a> &middot; &copy; 2026 Giuseppe Peressotti</p>
 </footer>
 ```
