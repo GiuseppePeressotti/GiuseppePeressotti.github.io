@@ -31,47 +31,48 @@ title: "Research"
       <div class="section-subhead section-subhead--published">Working Papers</div>
 
       <div class="pub">
-        <div class="pub-title">Why Take a Detour: The Strategic Choice Between Bilateral and Multilateral PTAs</div>
-        <div class="pub-meta">Ye, Huei-Jyun and <strong>Giuseppe Peressotti</strong>. Presented at ISA 2025, IHS Papers Workshop 2025, WPS UTD 2025, MPSA 2026.</div>
-        <div class="pub-note">Abstract coming soon</div>
-      </div>
-      <div class="pub">
         <div class="pub-title">Rulemakers and Ruletakers in Digital Trade Governance: Network Structure and the Diffusion of Digital Provisions in Preferential Trade Agreements</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at IHS Proposal Workshop 2025, ISA 2026. <span class="pub-status">Submitted</span></div>
-        <div class="pub-note">Abstract coming soon</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at IHS Proposal Workshop 2025, ISA 2026; to be presented at APSA 2026. <span class="pub-status">Revise and Resubmit at <em>The Review of International Organizations</em></span></div>
+        <details class="pub-abstract"><summary>Abstract</summary><p>Who makes the rules of digital trade governance, and how do those rules spread? As multilateral negotiations stall, countries increasingly embed digital governance rules in preferential trade agreements (PTAs), creating a fragmented regime complex of overlapping and non-hierarchical commitments. Leveraging the TAPED dataset, I build three provision-type networks (e-commerce, data flows, and intellectual property) and analyze 382 PTAs encompassing 173 countries (2000–2022) through descriptive network analysis and Stochastic Actor-Oriented Models (SAOMs). I propose a novel five-category country typology, showing that structural centrality alone is a poor proxy for rulemaking agency: Peru and Vietnam rank higher than the United States in terms of centrality, yet neither designs the provisions they adopt. The SAOM results showcase that e-commerce and data governance networks grow through a structural arbitrage mechanism rather than generic clustering, while the intellectual property network follows a qualitatively different logic consistent with the influence of TRIPS Plus. Formation dynamics vary across provision types: data governance is the most hierarchy-driven domain, while IP provisions diffuse largely independently of economic capacity. The EU's collective negotiation structure produces a distinctive pattern of external regulatory export while imposing regulatory constraints without providing corresponding market-access provisions. These findings suggest that the distinction between those who set the rules of digital governance and those who adopt them is shaped by the interplay of entry timing, structural constraints, and the specific provisions at stake.</p></details>
       </div>
       <div class="pub">
         <div class="pub-title">The Dual Economy of Entrepreneurship: Normative Determinants of Informality and Government Trust in Guatemala</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Ricardo R. Noé. Presented at PCS 2026. <span class="pub-status">Submitted</span></div>
-        <div class="pub-note">Abstract coming soon</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Ricardo R. Noé. Presented at PCS 2026. <span class="pub-status">Under Review</span></div>
+        <details class="pub-abstract"><summary>Abstract</summary><p>Guatemala presents a puzzle: despite pervasive corruption and poorly enforced property rights, Guatemalans start businesses at rates exceeding the global average. Standard institutional analysis offers no satisfying answer. Drawing on a humanomics framework and three waves of Global Entrepreneurship Monitor data (2022–2024), this paper shows that two normative factors drive entrepreneurial activity: a commitment to markets and private property, and skepticism toward government. Guatemalans do not coordinate through formal institutions, but despite them. Quantitative and qualitative survey evidence supports the dualistic economy thesis: culture sustains entrepreneurship where institutions fail. Normative commitments reach where formal enforcement cannot.</p></details>
       </div>
       <div class="pub">
         <div class="pub-title">Watch Your Back: Identifying Overturning Organizations in Civil Resistance Transitions</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kashmiri Medhi, Naela Elmore, and Jonathan Pinckney. Presented at ISA 2026. <span class="pub-status">Submitted</span></div>
-        <div class="pub-note">Abstract coming soon</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kashmiri Medhi, Naela Elmore, and Jonathan Pinckney. Presented at ISA 2026. <span class="pub-status">Under Review</span></div>
+        <details class="pub-abstract"><summary>Abstract</summary><p>Who overturns nonviolent revolutions? A growing literature has identified a strong correlation between political transitions initiated through primarily nonviolent civil resistance and democratization. However, in several prominent cases, activists for democracy during civil resistance campaigns overturn democratic transitions and initiate returns to autocracy. While research in specific cases has identified some identity-based factors such as an anti-democratic ideology or ties to an old authoritarian regime as predictors of overturning, no research to date has systematically examined the pathway from organizations participating in civil resistance to overturning democratic transitions across cases. In this paper we utilize a novel dataset of civil resistance successor organizations to address this question, examining both organizations that initiate an overturning process and the organizations that support such attempts once they have taken place. We find that ideology and ties to the old regime do not systematically predict overturning. Instead, the most significant predictor of overturning is an index of organizational capacity. Former activists overturn democracy when they are embedded in hierarchical organizations, have significant mobilizational capacity, and have institutional positions of power during transitional regimes.</p></details>
       </div>
       <div class="pub">
         <div class="pub-title">Signaling Anti-Western Positioning: Regime Type, Alignment, and the Surge in Interest for the BRICS</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kelvin Chun-Man Chan, Minh Dao, Sadman Shafiq, Charles Alexander Weimer, and Tiziano Cecconato. Presented at MPSA 2026; to be presented at APSA 2026. <span class="pub-status">Submitted</span></div>
-        <div class="pub-note">Abstract coming soon</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>, Kelvin Chun-Man Chan, Minh Dao, Sadman Shafiq, Charles Alexander Weimer, and Tiziano Cecconato. Presented at MPSA 2026; to be presented at APSA 2026. <span class="pub-status">Under Review</span></div>
+        <details class="pub-abstract"><summary>Abstract</summary><p>The recent expansion of the BRICS has been met with an unprecedented wave of governments publicly expressing interest in joining the organization. Rather than treating these expressions simply as precursors to membership, we conceptualize them as a form of international political signaling through which governments publicly position themselves relative to the Western-led international order. To evaluate this argument, we build a novel dataset covering 195 states, recording whether and when governments publicly expressed interest in joining the BRICS from its founding through the end of 2024. We find that interest in BRICS is concentrated among less democratic governments, those aligned with its founders, and oil-rich states, while aid dependent governments are less likely to express interest. By contrast, trade and investment ties with the BRICS and exposure to Western conditionality do not seem to explain interest in the organization. This descriptive analysis suggests that governments seek closer association with BRICS when it matches their political orientation and when fiscal autonomy lowers the cost of signaling distance from the West. More broadly, these findings show how governments position themselves within the international order through the institutions and political coalitions they publicly seek to join.</p></details>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Why Take a Detour: The Strategic Choice Between Bilateral and Multilateral PTAs</div>
+        <div class="pub-meta">Ye, Huei-Jyun and <strong>Giuseppe Peressotti</strong>. Presented at ISA 2025, IHS Papers Workshop 2025, WPS UTD 2025, MPSA 2026.</div>
+        <details class="pub-abstract"><summary>Abstract</summary><p>Multilateral negotiations for preferential trade agreements (PTAs) tend to be more complicated and have a higher failure rate than bilateral talks. To reap the benefits of free trade sooner, countries should prefer having fewer negotiating partners rather than more. However, Japan and Canada suspended their bilateral talks in 2014 and turned to negotiating for the Trans-Pacific Partnership. Vietnam has participated in more multilateral PTA negotiations than bilateral ones. Why do some countries forgo productive bilateral negotiations for time-consuming multilateral talks? We argue that the strategic benefits of multilateral negotiations can outweigh their heightened complexity. First, economic development and trade integration shape incentives: advanced economies with moderate integration may expand their influence, while smaller or less integrated states use multilateralism to promote development and strengthen trade networks. Second, geopolitical considerations and inter-regional dynamics further influence decisions, as countries align with strategic partners or counterbalance regional powers. This study examines Indo-Pacific countries' trade agendas, distinguishing two main motivations behind the pursuit of mega-PTAs like RCEP and CPTPP, which make the region an ideal setting for this analysis. By explaining the counterintuitive decisions for regional integration, our findings provide insight into the research areas of foreign policy analysis, trade cooperation, and regional studies. This study also entails policy implications for future efforts in trade negotiations.</p></details>
       </div>
 
       <div class="section-subhead section-subhead--published">Work in Progress</div>
 
       <div class="pub">
         <div class="pub-title">Making Commitments Bite: Institutional Capacity and the Domestic Effects of International IP Rules</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at GSIPE 2025, ISA 2025; to be presented at APSA 2026.</div>
-        <div class="pub-note">Abstract coming soon</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at GSIPE 2025, ISA 2025.</div>
       </div>
       <div class="pub">
         <div class="pub-title">From Loyalty to Exit: Why Regime Support Groups Defect during Civil Resistance</div>
         <div class="pub-meta">Elmore, Naela, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney.</div>
-        <div class="pub-note">Abstract coming soon</div>
       </div>
       <div class="pub">
         <div class="pub-title">Competing to Negotiate: How Rivalry Shapes the Fate of International Treaties</div>
         <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Huei-Jyun Ye. To be presented at IPES 2026.</div>
-        <div class="pub-note">Abstract coming soon</div>
+      </div>
+      <div class="pub">
+        <div class="pub-title">Gender and Entrepreneurship: Evidence from Guatemala</div>
+        <div class="pub-meta">Noé, Ricardo R., <strong>Giuseppe Peressotti</strong>, and Marimaite Rayo.</div>
       </div>
 
     </section>
