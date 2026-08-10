@@ -1,5 +1,5 @@
 ---
-title: "Data & Tools"
+title: "Data"
 ---
 
 ```{=html}
@@ -7,11 +7,148 @@ title: "Data & Tools"
   <div class="content">
 
     <section class="section reveal">
-      <div class="wip-banner">
-        <div class="wip-banner-label">Work in Progress</div>
-        <h2 class="wip-banner-title">Data &amp; Tools</h2>
-        <p class="wip-banner-text">This page will host replication archives, original datasets, and small tools from my research. Check back soon.</p>
-      </div>
+      <div class="page-title">Data</div>
+      <p class="data-intro">This page is a display window for some of the datasets I have worked on (with some amazing coauthors) across my projects. If you need any information, especially about the unpublished datasets, please feel free to contact me!</p>
+
+      <article class="dataset">
+        <h3 class="dataset-title">ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</h3>
+        <p class="dataset-desc">The project identifies overturning attempts as part of civil resistance transitions: who tried to take the win back, how, and whether they succeeded. It covers 68 transitions in 61 countries between 1974 and 2018, and yields 86 attempts, nine of which reversed the transition.</p>
+
+        <div class="views" tabindex="0" role="group" aria-label="ROAD views">
+          <button class="view-nav prev" type="button" aria-label="Previous view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <div class="view-stage">
+            <div class="view-panel is-active">
+              <img class="fig-light" src="figures/data/road-timeline-light.png" alt="Timeline with 68 horizontal lines, one per civil resistance transition, ordered by onset year and coloured by whether the transition was attacked and whether it fell.">
+              <img class="fig-dark" src="figures/data/road-timeline-dark.png" alt="Timeline with 68 horizontal lines, one per civil resistance transition, ordered by onset year and coloured by whether the transition was attacked and whether it fell.">
+            </div>
+            <div class="view-panel">
+              <img class="fig-light" src="figures/data/road-mechanisms-light.png" alt="Dot plot of 86 overturning attempts by mechanism: 36 military coups, then legal changes, external overthrow, other, gradual seizure, and one armed insurgency.">
+              <img class="fig-dark" src="figures/data/road-mechanisms-dark.png" alt="Dot plot of 86 overturning attempts by mechanism: 36 military coups, then legal changes, external overthrow, other, gradual seizure, and one armed insurgency.">
+            </div>
+            <div class="view-panel">
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <caption>The nine reversals</caption>
+                  <thead><tr><th>Country</th><th>Transition</th><th>How it fell</th></tr></thead>
+                  <tbody>
+                    <tr><td class="term">Iran</td><td class="num">1979&ndash;1981</td><td>Legal changes toward autocracy</td></tr>
+                    <tr><td class="term">Niger</td><td class="num">1991&ndash;1993</td><td>Military coup</td></tr>
+                    <tr><td class="term">Albania</td><td class="num">1991&ndash;1992</td><td>Gradual seizure by new elites</td></tr>
+                    <tr><td class="term">Zambia</td><td class="num">1991&ndash;1992</td><td>Gradual seizure by new elites</td></tr>
+                    <tr><td class="term">Belarus</td><td class="num">1991&ndash;1997</td><td>Legal changes toward autocracy</td></tr>
+                    <tr><td class="term">Nigeria</td><td class="num">1993</td><td>Military coup</td></tr>
+                    <tr><td class="term">Egypt</td><td class="num">2011&ndash;2014</td><td>Military coup</td></tr>
+                    <tr><td class="term">Yemen</td><td class="num">2011&ndash;2012</td><td>External violent overthrow</td></tr>
+                    <tr><td class="term">Thailand</td><td class="num">2014</td><td>Military coup</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <button class="view-nav next" type="button" aria-label="Next view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="view-foot">
+            <span class="view-dots">
+              <button class="view-dot is-active" type="button" aria-label="View 1"></button>
+              <button class="view-dot" type="button" aria-label="View 2"></button>
+              <button class="view-dot" type="button" aria-label="View 3"></button>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dataset">
+        <h3 class="dataset-title">Identifying Overturning Organizations in Civil Resistance Transitions</h3>
+        <p class="dataset-desc">A continuation of the ROAD project, where we collected further data on the specific organizations involved in each campaign. Every organization is traced into the transition that followed and coded on what it is, how big it is, its ideology, whether it led the campaign, what office it took afterward, and how close it had been to the regime that fell. 303 organizations, 54 transitions, 48 countries.</p>
+
+        <div class="views" tabindex="0" role="group" aria-label="Successor organizations views">
+          <button class="view-nav prev" type="button" aria-label="Previous view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <div class="view-stage">
+            <div class="view-panel is-active">
+              <img class="fig-light" src="figures/data/wyb-grid-light.png" alt="Matrix of organization type against relationship to the fallen regime; 91 political parties and 57 civil society organizations were central to the opposition, while cells near the old regime are nearly empty.">
+              <img class="fig-dark" src="figures/data/wyb-grid-dark.png" alt="Matrix of organization type against relationship to the fallen regime; 91 political parties and 57 civil society organizations were central to the opposition, while cells near the old regime are nearly empty.">
+            </div>
+            <div class="view-panel">
+              <img class="fig-light" src="figures/data/wyb-capacity-light.png" alt="Bar chart of the share of organizations that moved to overturn the transition, by capacity score from zero to three: 2.9 percent, 7.5 percent, 17.9 percent, and 25.8 percent.">
+              <img class="fig-dark" src="figures/data/wyb-capacity-dark.png" alt="Bar chart of the share of organizations that moved to overturn the transition, by capacity score from zero to three: 2.9 percent, 7.5 percent, 17.9 percent, and 25.8 percent.">
+            </div>
+          </div>
+          <button class="view-nav next" type="button" aria-label="Next view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="view-foot">
+            <span class="view-dots">
+              <button class="view-dot is-active" type="button" aria-label="View 1"></button>
+              <button class="view-dot" type="button" aria-label="View 2"></button>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dataset">
+        <h3 class="dataset-title">The Interest in BRICS Accession Dataset</h3>
+        <p class="dataset-desc">In the context of the last waves of participation in the BRICS, we systematically coded every country in the world for whether it officially expressed interest in the group and when. Interest counts only on a statement by a head of state, foreign minister, or designated spokesperson, or when the bloc itself names the country. 195 states, 60 of them interested, through the end of 2024.</p>
+
+        <div class="views" tabindex="0" role="group" aria-label="BRICS views">
+          <button class="view-nav prev" type="button" aria-label="Previous view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <div class="view-stage">
+            <div class="view-panel is-active">
+              <img class="fig-light" src="figures/data/brics-map-light.png" alt="World map shading each state by BRICS status at the end of 2024: no documented interest, interest expressed, invited, partner, or member.">
+              <img class="fig-dark" src="figures/data/brics-map-dark.png" alt="World map shading each state by BRICS status at the end of 2024: no documented interest, interest expressed, invited, partner, or member.">
+            </div>
+            <div class="view-panel">
+              <div class="data-table-wrap">
+                <table class="data-table">
+                  <caption>The 60 interested states, by tier</caption>
+                  <thead><tr><th>Tier</th><th>N</th><th>States</th></tr></thead>
+                  <tbody>
+                    <tr><td class="term">Member</td><td class="num">10</td><td class="list">Brazil, China, Egypt, Ethiopia, India, Indonesia, Iran, Russia, South Africa, United Arab Emirates</td></tr>
+                    <tr><td class="term">Partner</td><td class="num">10</td><td class="list">Belarus, Bolivia, Cuba, Kazakhstan, Malaysia, Nigeria, Thailand, Uganda, Uzbekistan, Vietnam</td></tr>
+                    <tr><td class="term">Invited</td><td class="num">3</td><td class="list">Algeria, Argentina, Saudi Arabia</td></tr>
+                    <tr><td class="term">Interest only</td><td class="num">37</td><td class="list">Afghanistan, Angola, Azerbaijan, Bahrain, Bangladesh, Burkina Faso, Chad, Colombia, Republic of the Congo, Equatorial Guinea, Gabon, The Gambia, Ghana, Guinea-Bissau, Honduras, Iraq, Kenya, Kuwait, Laos, Libya, Madagascar, Mali, Myanmar, Namibia, Nicaragua, Pakistan, Palestine, Philippines, Senegal, South Sudan, Sri Lanka, Eswatini, Syria, T&uuml;rkiye, Uruguay, Venezuela, Zimbabwe</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="view-panel">
+              <img class="fig-light" src="figures/data/brics-cumulative-light.png" alt="Step chart of the cumulative count of states expressing interest, at ten or fewer through 2021, then jumping to 60 by 2024.">
+              <img class="fig-dark" src="figures/data/brics-cumulative-dark.png" alt="Step chart of the cumulative count of states expressing interest, at ten or fewer through 2021, then jumping to 60 by 2024.">
+            </div>
+          </div>
+          <button class="view-nav next" type="button" aria-label="Next view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="view-foot">
+            <span class="view-dots">
+              <button class="view-dot is-active" type="button" aria-label="View 1"></button>
+              <button class="view-dot" type="button" aria-label="View 2"></button>
+              <button class="view-dot" type="button" aria-label="View 3"></button>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="dataset">
+        <h3 class="dataset-title">From Loyalty to Exit: Why Regime Support Groups Defect during Civil Resistance</h3>
+        <p class="dataset-desc">An ongoing project on defections from the ruling coalition. Fourteen support groups are tracked year by year across authoritarian and backsliding regimes, each coded for how unified its support is and how intense its loyalty. The two views below are a window into what we did; the data will be able to show far more. This is still a WIP, stay tuned for updates!</p>
+
+        <div class="views" tabindex="0" role="group" aria-label="Defections views">
+          <button class="view-nav prev" type="button" aria-label="Previous view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <div class="view-stage">
+            <div class="view-panel is-active">
+              <img class="fig-light" src="figures/data/defections-groups-light.png" alt="Dot plot of coded observations across fourteen regime support groups, led by the military at 993 and party elites at 983.">
+              <img class="fig-dark" src="figures/data/defections-groups-dark.png" alt="Dot plot of coded observations across fourteen regime support groups, led by the military at 993 and party elites at 983.">
+            </div>
+            <div class="view-panel">
+              <img class="fig-light" src="figures/data/defections-slips-light.png" alt="Diverging bars per support group type showing the share of loyalty moves that went toward opposition versus back toward the regime.">
+              <img class="fig-dark" src="figures/data/defections-slips-dark.png" alt="Diverging bars per support group type showing the share of loyalty moves that went toward opposition versus back toward the regime.">
+            </div>
+          </div>
+          <button class="view-nav next" type="button" aria-label="Next view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+          <div class="view-foot">
+            <span class="view-dots">
+              <button class="view-dot is-active" type="button" aria-label="View 1"></button>
+              <button class="view-dot" type="button" aria-label="View 2"></button>
+            </span>
+          </div>
+        </div>
+      </article>
+
     </section>
 
   </div>

@@ -83,4 +83,37 @@
   } else {
     revealElements.forEach((el) => el.classList.add('visible'));
   }
+
+  // ── Data page: dataset view carousel ──
+  // Panels default to hidden in CSS with the first marked .is-active in the
+  // markup, so the page is correct before this runs and if it never does.
+  document.querySelectorAll('.views').forEach((group) => {
+    const panels = Array.from(group.querySelectorAll('.view-panel'));
+    if (panels.length < 2) return;
+
+    const prev = group.querySelector('.view-nav.prev');
+    const next = group.querySelector('.view-nav.next');
+    const dots = Array.from(group.querySelectorAll('.view-dot'));
+    let i = Math.max(0, panels.findIndex((pn) => pn.classList.contains('is-active')));
+
+    const show = (n) => {
+      i = (n + panels.length) % panels.length;
+      panels.forEach((pn, j) => pn.classList.toggle('is-active', j === i));
+      dots.forEach((d, j) => {
+        d.classList.toggle('is-active', j === i);
+        d.setAttribute('aria-current', j === i ? 'true' : 'false');
+      });
+    };
+
+    if (prev) prev.addEventListener('click', () => show(i - 1));
+    if (next) next.addEventListener('click', () => show(i + 1));
+    dots.forEach((d, j) => d.addEventListener('click', () => show(j)));
+
+    group.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); show(i - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); show(i + 1); }
+    });
+
+    show(i);
+  });
 </script>

@@ -1,6 +1,21 @@
 /* ── Reset ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* Nothing may introduce a third typeface. Headings, form controls and buttons
+   do not inherit font-family by default, so they are forced to inherit here;
+   every rule below sets --font-sans or --font-serif, never a literal stack. */
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea,
+table, caption, th, td {
+  font-family: inherit;
+}
+
+/* ── Font tokens ── */
+:root {
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+}
+
 /* ── Theme: Light ── */
 :root,
 [data-theme="light"] {
@@ -53,7 +68,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   font-weight: 400;
   line-height: 1.75;
   color: var(--text);
@@ -67,7 +82,7 @@ a {
 a:hover { color: var(--accent-hover); }
 
 /* ── Typography ── */
-.serif { font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif; }
+.serif { font-family: var(--font-serif); }
 .label {
   font-size: 0.6875rem;
   font-weight: 550;
@@ -202,7 +217,7 @@ nav.scrolled { border-bottom-color: var(--border); }
 }
 .header-photo:hover { transform: scale(1.03); }
 .header-name {
-  font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-size: 2.75rem;
   font-weight: 400;
   line-height: 1.2;
@@ -269,7 +284,7 @@ nav.scrolled { border-bottom-color: var(--border); }
 }
 .sidebar-photo:hover { transform: scale(1.03); }
 .sidebar-name {
-  font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-size: 1.65rem;
   font-weight: 400;
   line-height: 1.2;
@@ -435,10 +450,10 @@ nav.scrolled { border-bottom-color: var(--border); }
   background: var(--accent-faint);
 }
 .pub-title {
-  font-size: 0.9375rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 550;
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.55;
 }
 .pub-meta {
   font-size: 0.8125rem;
@@ -532,9 +547,10 @@ nav.scrolled { border-bottom-color: var(--border); }
 
 /* Tiered subhead variants for the Research page */
 .section-subhead--published {
-  font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
-  font-size: 1.5rem;
+  font-family: var(--font-serif);
+  font-size: 1.9rem;   /* same rank as .page-title on the Data page */
   font-weight: 400;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   text-transform: none;
   color: var(--text);
@@ -544,7 +560,7 @@ nav.scrolled { border-bottom-color: var(--border); }
   display: inline-block;
 }
 .section-subhead--working {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -590,7 +606,7 @@ nav.scrolled { border-bottom-color: var(--border); }
   margin-bottom: 1.5rem;
 }
 .wip-banner-title {
-  font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-serif);
   font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: -0.01em;
@@ -774,8 +790,8 @@ footer {
   margin-bottom: 0.2rem;
 }
 .course-title {
-  font-size: 0.9375rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 550;
   color: var(--text);
   line-height: 1.5;
 }
@@ -809,4 +825,154 @@ main.content,
   max-width: none !important;
   width: 100% !important;
   display: block !important;
+}
+
+/* ── Data page ── */
+/* Matches .section-subhead--published on the Research and Teaching pages; the
+   two are the same rank of heading and must stay the same size. */
+.page-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.45rem;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+}
+.data-intro {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.dataset { padding: 2rem 0 2.25rem; }
+.dataset + .dataset { border-top: 1px solid var(--border); }
+.dataset-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  max-width: 40ch;   /* long paper-style titles break on measure, not on the column */
+}
+.dataset-desc {
+  font-size: 0.9375rem;
+  color: var(--text);
+  line-height: 1.8;
+  margin-top: 0.85rem;
+}
+/* ── Carousel: arrows flanking one view at a time ── */
+/* Panels are hidden in CSS, not by script, so a failed script can never leave
+   every view stacked on the page. */
+.views {
+  margin-top: 1.35rem;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 28px;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+.view-stage { grid-column: 2; min-width: 0; }
+.view-panel { display: none; }
+.view-panel.is-active { display: block; }
+.view-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+/* The theme swap must out-specify `.view-panel img`, which sets display:block.
+   A bare `.fig-dark` selector (0,1,0) loses to it (0,1,1) and both render. */
+.view-panel img.fig-dark { display: none; }
+[data-theme="dark"] .view-panel img.fig-light { display: none; }
+[data-theme="dark"] .view-panel img.fig-dark  { display: block; }
+
+.view-nav {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+.view-nav:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-faint);
+}
+.view-nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.view-nav svg { width: 13px; height: 13px; }
+.view-nav.prev { grid-column: 1; justify-self: start; }
+.view-nav.next { grid-column: 3; justify-self: end; }
+
+/* The caption slot is gone: the figure's own title carries the reading, so the
+   dots are the only thing left in the foot and they centre under the figure. */
+.view-foot {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+.view-dots { display: flex; gap: 0.3rem; flex-shrink: 0; }
+.view-dot {
+  width: 5px; height: 5px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--tag-border);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.view-dot.is-active { background: var(--accent); }
+.view-dot:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ── Data tables ── */
+.data-table-wrap { overflow-x: auto; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; line-height: 1.6; }
+.data-table caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 0.9375rem;
+  color: var(--text);
+  padding-bottom: 0.7rem;
+}
+.data-table th {
+  text-align: left;
+  font-size: 0.6875rem;
+  font-weight: 550;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  padding: 0 0.75rem 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.data-table td {
+  padding: 0.45rem 0.75rem 0.45rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: top;
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table td.num { font-variant-numeric: tabular-nums; color: var(--text-secondary); white-space: nowrap; }
+.data-table td.term { font-weight: 500; white-space: nowrap; }
+.data-table td.list { color: var(--text-secondary); }
+
+@media (max-width: 768px) {
+  .views { grid-template-columns: 24px minmax(0, 1fr) 24px; column-gap: 0.25rem; }
+  .view-nav { width: 24px; height: 24px; }
+  .dataset-title { font-size: 1.5rem; max-width: none; }
+  .page-title,
+  .section-subhead--published { font-size: 1.6rem; }
+  .data-table { font-size: 0.75rem; }
 }
