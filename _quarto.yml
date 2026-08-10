@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - CV_research_peressotti_august2026.pdf
+    - styles.css
   render:
     - "*.qmd"
     - "!_progress.md"
@@ -15,7 +16,6 @@ website:
 format:
   html:
     theme: none
-    css: styles.css
     toc: false
     page-layout: custom
     include-in-header: _head-extras.html
