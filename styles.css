@@ -548,7 +548,7 @@ nav.scrolled { border-bottom-color: var(--border); }
 /* Tiered subhead variants for the Research page */
 .section-subhead--published {
   font-family: var(--font-serif);
-  font-size: 1.9rem;   /* same rank as .page-title on the Data page */
+  font-size: 1.9rem;   /* same rank as .dataset-title on the Data page */
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -828,20 +828,6 @@ main.content,
 }
 
 /* ── Data page ── */
-/* Matches .section-subhead--published on the Research and Teaching pages; the
-   two are the same rank of heading and must stay the same size. */
-.page-title {
-  font-family: var(--font-serif);
-  font-size: 1.9rem;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--text);
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.45rem;
-  margin-bottom: 1.25rem;
-  display: inline-block;
-}
 .data-intro {
   font-size: 0.9375rem;
   color: var(--text-secondary);
@@ -850,6 +836,8 @@ main.content,
 
 .dataset { padding: 2rem 0 2.25rem; }
 .dataset + .dataset { border-top: 1px solid var(--border); }
+/* Same accent underline as .section-subhead--published on the Research and
+   Teaching pages: each dataset title carries the site's orange bar. */
 .dataset-title {
   font-family: var(--font-serif);
   font-size: 1.9rem;
@@ -858,6 +846,10 @@ main.content,
   letter-spacing: -0.01em;
   color: var(--text);
   max-width: 40ch;   /* long paper-style titles break on measure, not on the column */
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.45rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
 }
 .dataset-desc {
   font-size: 0.9375rem;
@@ -972,7 +964,6 @@ main.content,
   .views { grid-template-columns: 24px minmax(0, 1fr) 24px; column-gap: 0.25rem; }
   .view-nav { width: 24px; height: 24px; }
   .dataset-title { font-size: 1.5rem; max-width: none; }
-  .page-title,
   .section-subhead--published { font-size: 1.6rem; }
   .data-table { font-size: 0.75rem; }
 }

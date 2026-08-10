@@ -7,7 +7,7 @@ title: "Data"
   <div class="content">
 
     <section class="section reveal">
-      <div class="page-title">Data</div>
+      <div class="section-label">Data</div>
       <p class="data-intro">This page is a display window for some of the datasets I have worked on (with some amazing coauthors) across my projects. If you need any information, especially about the unpublished datasets, please feel free to contact me!</p>
 
       <article class="dataset">
