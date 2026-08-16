@@ -20,22 +20,22 @@ title: "Teaching"
       <div class="course">
         <div class="course-code">PSCI 4396</div>
         <div class="course-title">International Trade Policy</div>
-        <div class="course-meta"><a href="syllabus_PSCI4396_120125.pdf">Syllabus</a></div>
+        <div class="course-meta"><a href="syllabus_PSCI4396_120125.pdf" aria-label="Syllabus for International Trade Policy">Syllabus</a> &middot; <a href="evaluation_PSCI4396_Fall2025.pdf" aria-label="Student evaluations for International Trade Policy">Evaluations</a></div>
       </div>
       <div class="course">
         <div class="course-code">PSCI 4314</div>
         <div class="course-title">Political Economy of East Asia</div>
-        <div class="course-meta"><a href="syllabus_PSCI4314_042125.pdf">Syllabus</a></div>
+        <div class="course-meta"><a href="syllabus_PSCI4314_042125.pdf" aria-label="Syllabus for Political Economy of East Asia">Syllabus</a> &middot; <a href="evaluation_PSCI4314_Spring2025.pdf" aria-label="Student evaluations for Political Economy of East Asia">Evaluations</a></div>
       </div>
       <div class="course">
         <div class="course-code">PSCI 3328</div>
         <div class="course-title">International Relations</div>
-        <div class="course-meta"><a href="syllabus_PSCI3328_011926.pdf">Syllabus</a></div>
+        <div class="course-meta"><a href="syllabus_PSCI3328_011926.pdf" aria-label="Syllabus for International Relations">Syllabus</a> &middot; <a href="evaluation_PSCI3328_Spring2026.pdf" aria-label="Student evaluations for International Relations">Evaluations</a></div>
       </div>
       <div class="course">
         <div class="course-code">EPPS 2301</div>
         <div class="course-title">Research Design in the Social and Policy Sciences</div>
-        <div class="course-meta"><a href="syllabus_EPPS2301_092724.pdf">Syllabus</a></div>
+        <div class="course-meta"><a href="syllabus_EPPS2301_092724.pdf" aria-label="Syllabus for Research Design in the Social and Policy Sciences">Syllabus</a> &middot; <a href="evaluation_EPPS2301_Fall2024.pdf" aria-label="Student evaluations for Research Design in the Social and Policy Sciences">Evaluations</a></div>
       </div>
 
     </section>
