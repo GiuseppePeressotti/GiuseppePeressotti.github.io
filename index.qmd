@@ -3,12 +3,13 @@ title: ""
 ---
 
 ```{=html}
-<div class="page-single">
+<div class="page-home">
 
-  <!-- ── Header (centered, elegant) ── -->
-  <header class="header reveal">
+  <!-- ── Profile rail ── -->
+  <aside class="home-rail" aria-labelledby="home-name">
+    <div class="home-profile reveal">
     <img src="pic1.jpg" alt="Giuseppe Peressotti" class="header-photo" width="960" height="960" fetchpriority="high">
-    <h1 class="header-name">Giuseppe Peressotti</h1>
+    <h1 id="home-name" class="header-name">Giuseppe Peressotti</h1>
     <p class="header-subtitle">PhD Candidate in Public Policy &amp; Political Economy · Expected Spring 2027</p>
     <p class="header-institution">The University of Texas at Dallas</p>
     <span class="header-market">On the 2026–2027 Job Market</span>
@@ -31,9 +32,10 @@ title: ""
         LinkedIn
       </a>
     </div>
-  </header>
+    </div>
+  </aside>
 
-  <div class="content">
+  <main class="content">
 
     <!-- About -->
     <section class="section reveal">
@@ -50,7 +52,7 @@ title: ""
       </div>
     </section>
 
-  </div>
+  </main>
 </div>
 
 <footer>
