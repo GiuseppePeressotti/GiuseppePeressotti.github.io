@@ -9,7 +9,8 @@ title: "Teaching"
     <section class="section reveal">
       <div class="section-label">Teaching</div>
       <div class="about-text">
-        <p>I have served as sole instructor of record for four undergraduate courses at the University of Texas at Dallas. I completed the Graduate Teaching Certificate (UT Dallas, 2024).</p>
+        <p>I see teaching as one of the most fundamental ways scholars can pass knowledge forward. My goal is to help students understand the material while instilling the curiosity and intellectual independence that encourage them to continue learning beyond the classroom. Across my teaching, I encourage students to identify consequential questions, consider competing explanations, evaluate evidence, and recognize the limits of the conclusions we can draw. I want students to leave my courses inspired to pursue questions that matter to them, and better prepared to approach unfamiliar problems thoughtfully and to develop, defend, and revise their own arguments.</p>
+        <p>I put these principles into practice by combining conceptual foundations with opportunities to apply them through discussion, research projects, simulations, and engagement with real political and economic problems. Throughout my PhD, I deliberately sought opportunities to teach subjects central to my intellectual interests while continuing to develop as an instructor through broader teaching-assistant experience, workshops, and UT Dallas's Graduate Teaching Certificate.</p>
       </div>
     </section>
 
