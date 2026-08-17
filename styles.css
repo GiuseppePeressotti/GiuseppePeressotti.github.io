@@ -25,7 +25,7 @@ table, caption, th, td {
   --bg-surface:     #F0EEEA;
   --text:           #1A1918;
   --text-secondary: #6E6E6A;
-  --text-tertiary:  #9C9C98;
+  --text-tertiary:  #767671;   /* 4.37:1 on --bg; #9C9C98 was 2.63:1 */
   --accent:         #C24D2C;
   --accent-hover:   #A8412A;
   --accent-faint:   rgba(194, 77, 44, 0.08);
@@ -33,6 +33,8 @@ table, caption, th, td {
   --tag-bg:         transparent;
   --tag-border:     #D0CEC9;
   --photo-border:   #E8E6E2;
+  --panel-bg:       #F0EEEA;
+  --panel-border:   #DAD7D1;
   --switch-bg:      #D8D6D1;
   --switch-thumb:   #FFFFFF;
 }
@@ -44,14 +46,16 @@ table, caption, th, td {
   --bg-surface:     #1A1A18;
   --text:           #E4E2DD;
   --text-secondary: #8C8C88;
-  --text-tertiary:  #5C5C58;
+  --text-tertiary:  #82827D;   /* 4.93:1 on --bg; #5C5C58 was 2.83:1 */
   --accent:         #D4684A;
   --accent-hover:   #E07A5C;
   --accent-faint:   rgba(212, 104, 74, 0.1);
-  --border:         #2A2A28;
+  --border:         #34342F;   /* #2A2A28 was 1.32:1 — rules were invisible */
   --tag-bg:         rgba(255,255,255,0.04);
   --tag-border:     #3A3A36;
   --photo-border:   #2A2A28;
+  --panel-bg:       #1A1A18;
+  --panel-border:   #34342F;
   --switch-bg:      #3A3A36;
   --switch-thumb:   #E4E2DD;
 }
@@ -108,7 +112,6 @@ a:focus-visible {
 .pub-meta,
 .pub-note,
 .pub-abstract p,
-.data-intro,
 .dataset-desc,
 .course-title,
 .course-meta,
@@ -905,12 +908,8 @@ main.content,
 }
 
 /* ── Data page ── */
-.data-intro {
-  font-size: 0.9375rem;
-  color: var(--text);
-  line-height: 1.8;
-}
-
+/* The page intro uses .about-text, the same class as the Home and Teaching
+   intros, so its colour, size and mobile scaling can never drift from them. */
 .dataset { padding: 2rem 0 2.25rem; }
 .dataset + .dataset { border-top: 1px solid var(--border); }
 /* Same accent underline as .section-subhead--published on the Research and
@@ -1044,3 +1043,54 @@ main.content,
   .section-subhead--published { font-size: 1.6rem; }
   .data-table { font-size: 0.75rem; }
 }
+
+/* ── Section eyebrow: accent tick before the label (all pages) ── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.section-label::before {
+  content: '';
+  width: 2px;
+  height: 0.95rem;
+  background: var(--accent);
+  border-radius: 1px;
+  flex: none;
+}
+
+/* ── Top rule above the first section, on every page.
+      Must come after `.section:first-child { border-top: none }` above:
+      Quarto injects an empty <header class="quarto-title-block"> into
+      main.content on the Home page but not into the .content div on the
+      others, so :first-child matched inconsistently and the rule appeared
+      on Home only. :first-of-type matches in both shapes. ── */
+.content > .section:first-of-type {
+  border-top: 1px solid var(--border);
+}
+
+/* ── Profile rail reads as one panel ── */
+.home-profile {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 1.75rem 1.25rem 1.5rem;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+.page-home .header-photo { margin-bottom: 1.1rem; }
+
+/* Espresso photo matches the headshot's corner treatment. */
+.espresso-photo { border-radius: 10px; }
+
+/* The floated <figure> breaks `p + p` adjacency, so the paragraph after it
+   lost its top margin and collided with the one above. */
+.about-text > * + p { margin-top: 1rem; }
+
+/* Footer contact link is plain accent text, not an outlined button. */
+footer .footer-text .pub-link {
+  border: none;
+  padding: 0;
+  background: none;
+  color: var(--accent);
+}
+footer .footer-text .pub-link:hover { color: var(--accent-hover); }

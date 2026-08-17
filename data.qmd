@@ -8,7 +8,9 @@ title: "Data"
 
     <section class="section reveal">
       <div class="section-label">Data</div>
-      <p class="data-intro">This page is a display window for some of the datasets I have worked on (with some amazing coauthors) across my projects. If you need any information, especially about the unpublished datasets, please feel free to contact me!</p>
+      <div class="about-text">
+        <p>This page is a display window for some of the datasets I have worked on (with some amazing coauthors) across my projects. If you need any information, especially about the unpublished datasets, please feel free to contact me!</p>
+      </div>
 
       <article class="dataset">
         <h3 class="dataset-title">ROAD to Democracy: A Global Dataset of Overturning Attempts and Organizations in Civil Resistance Transitions</h3>
