@@ -102,6 +102,32 @@ med <- pos %>%
   mutate(side = factor(side, levels = c("Expressed interest", "No documented interest")))
 print(as.data.frame(med))
 
+# Nine labels, capped there on purpose: the five founders, the two large states
+# that joined in the 2024 wave, and the two interested states that sit furthest
+# from the pattern (Turkiye votes far from the founders, Uruguay is the most
+# democratic state on the interested side). Names are spelled out here rather
+# than pulled through countrycode, which is not a dependency of the other site
+# figures. Offsets are hand-set against the render: ggrepel is not installed on
+# the machine that builds these.
+LAB <- data.frame(
+  iso3c = c("CHN",  "RUS",   "IRN",  "TUR",     "IND",  "IDN",       "ZAF",
+            "BRA",  "URY"),
+  name  = c("China","Russia","Iran", "T\u00fcrkiye","India","Indonesia","South Africa",
+            "Brazil","Uruguay"),
+  nx    = c(0.016, -0.014,   0.016,  0.016,     0.016,  0.016,       0.016,
+            0.016,  0.016),
+  ny    = c(0.075, -0.020,   0.070,  0.070,     0.075,  0.105,       0.060,
+            0.075,  0.070),
+  # Russia is the one label that has to sit on the left: everything to its right
+  # is the dense interested cluster, and the label ran through four points.
+  hj    = c(0,      1,       0,      0,         0,      0,           0,
+            0,      0))
+lab <- pos %>%
+  inner_join(LAB, by = "iso3c") %>%
+  transmute(iso3c, name, nx, ny, hj, x = libdem, y = unga_dist_brics,
+            grp, side)
+stopifnot(nrow(lab) == nrow(LAB))
+
 fig2 <- function(mode) {
   p <- PAL[[mode]]
   cols <- setNames(c(p$second, p$accent, p$muted), GRPS)
@@ -122,6 +148,9 @@ fig2 <- function(mode) {
     # and at cross size it read as a smudge. The neutral grey carries the mark.
     geom_point(data = med, aes(shape = "Group median"), size = 5.4, stroke = 1.1,
                colour = ifelse(med$side == "Expressed interest", p$accent, p$secondary)) +
+    geom_text(data = lab, aes(x + nx, y + ny, label = name, hjust = hj), size = 2.5,
+              family = SITE_FONT,
+              colour = ifelse(lab$grp == "Founding member", p$second, p$accent)) +
     scale_colour_manual(values = cols, breaks = GRPS, drop = FALSE,
                         guide = guide_legend(order = 1, override.aes = list(
                           shape = c(18, 16, 21), size = c(3.2, 2.2, 2.2),
