@@ -1067,6 +1067,7 @@ main.content,
       on Home only. :first-of-type matches in both shapes. ── */
 .content > .section:first-of-type {
   border-top: 1px solid var(--border);
+  padding-top: 0;
 }
 
 /* ── Profile rail reads as one panel ── */
