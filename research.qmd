@@ -59,7 +59,7 @@ title: "Research"
       <div class="section-subhead section-subhead--published">Work in Progress</div>
 
       <div class="pub">
-        <div class="pub-title">Making Commitments Bite: Institutional Capacity and the Domestic Effects of International IP Rules</div>
+        <div class="pub-title">Implementation After Ratification: Treaty Claims and Domestic Action</div>
         <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at GSIPE 2025, ISA 2025.</div>
       </div>
       <div class="pub">
