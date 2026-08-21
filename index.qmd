@@ -59,7 +59,7 @@ title: ""
           <img src="coffee.jpg" alt="Home coffee and espresso setup" class="espresso-photo" width="1024" height="1024" loading="lazy" decoding="async">
           <figcaption>Pictured, my beautiful espresso setup: a Fellow ES 1 and a Niche Duo.</figcaption>
         </figure>
-        <p>Outside academia, I spend an arguably unreasonable amount of time thinking about coffee and espresso, enjoy lifting weights, and try to travel, hike, and get outdoors whenever I can. Lately, I have also found myself falling down a rabbit hole of quality backpacks. Feel free to look around, check out my research and teaching, or get in touch!</p>
+        <p>Outside of academia, I spend an arguably unreasonable amount of time thinking about coffee and espresso. I also enjoy lifting, and I try to travel, hike, and get outdoors whenever I can. Lately, I have also found myself falling down a rabbit hole of collecting quality backpacks. Feel free to look around, check out my research and teaching, or get in touch!</p>
       </div>
     </section>
 
