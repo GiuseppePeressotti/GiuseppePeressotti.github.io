@@ -395,6 +395,14 @@ nav.scrolled { border-bottom-color: var(--border); }
 }
 .about-text em { font-style: italic; }
 .about-text p + p { margin-top: 1rem; }
+.about-text strong { font-weight: 600; color: var(--text); }
+.about-text a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--accent-faint);
+}
+.about-text a:hover { text-decoration-color: var(--accent-hover); }
 
 /* ── Espresso figure ── */
 .about-text { display: flow-root; }
