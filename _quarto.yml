@@ -3,11 +3,11 @@ project:
   resources:
     - CV_research_peressotti_august2026.pdf
     - styles.css
+    - job_market_pic.png
   render:
     - "*.qmd"
     - "!_progress.md"
     - "!decision_log.md"
-    - "!PHASES.md"
     - "!README.md"
 
 website:
