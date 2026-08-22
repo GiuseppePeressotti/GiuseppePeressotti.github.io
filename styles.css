@@ -254,17 +254,6 @@ nav.scrolled { border-bottom-color: var(--border); }
   color: var(--text-secondary);
   line-height: 1.45;
 }
-.header-institution a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  text-decoration-color: var(--accent-faint);
-}
-.header-institution a:hover {
-  color: var(--accent-hover);
-  text-decoration-color: var(--accent-hover);
-}
 .header-market {
   display: block;
   font-size: 0.8125rem;
@@ -1123,9 +1112,9 @@ footer .footer-text .pub-link:hover { color: var(--accent-hover); }
 
 /* Photo: soft-cornered rectangle, full rail width, hairline edge only. */
 .page-home .header-photo {
-  width: 200px;
-  height: 200px;
-  max-width: 100%;
+  width: min(240px, 100%);
+  height: auto;
+  aspect-ratio: 1;
   border-radius: 50%;
   border: 1px solid var(--border);
   object-fit: cover;
@@ -1214,7 +1203,7 @@ footer .footer-text .pub-link:hover { color: var(--accent-hover); }
 @media (max-width: 820px) {
   .home-profile {
     display: grid;
-    grid-template-columns: 132px minmax(0, 1fr);
+    grid-template-columns: 168px minmax(0, 1fr);
     column-gap: 1.5rem;
     align-items: start;
     padding-bottom: 1.5rem;
@@ -1222,8 +1211,9 @@ footer .footer-text .pub-link:hover { color: var(--accent-hover); }
   }
   .page-home .header-photo {
     grid-row: 1 / span 4;
-    width: 132px;
-    height: 132px;
+    width: 168px;
+    height: auto;
+    aspect-ratio: 1;
     max-width: none;
     margin-bottom: 0;
   }
@@ -1256,8 +1246,9 @@ footer .footer-text .pub-link:hover { color: var(--accent-hover); }
 @media (max-width: 560px) {
   .home-profile { display: block; }
   .page-home .header-photo {
-    width: 120px;
-    height: 120px;
+    width: min(190px, 55vw);
+    height: auto;
+    aspect-ratio: 1;
     margin-bottom: 1.25rem;
   }
   .page-home .header-links a { min-height: 44px; }
