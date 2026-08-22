@@ -8,7 +8,7 @@ title: ""
   <!-- ── Profile rail ── -->
   <aside class="home-rail" aria-labelledby="home-name">
     <div class="home-profile reveal">
-    <img src="job_market_pic.png?v=2" alt="Giuseppe Peressotti" class="header-photo" width="720" height="720" fetchpriority="high">
+    <img src="job_market_pic.png?v=3" alt="Giuseppe Peressotti" class="header-photo" width="720" height="720" fetchpriority="high">
     <h1 id="home-name" class="header-name">Giuseppe Peressotti</h1>
     <p class="header-institution">The University of Texas at Dallas</p>
     <span class="header-market">On the 2026–2027 Job Market</span>
