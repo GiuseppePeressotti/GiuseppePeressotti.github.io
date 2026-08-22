@@ -254,6 +254,17 @@ nav.scrolled { border-bottom-color: var(--border); }
   color: var(--text-secondary);
   line-height: 1.45;
 }
+.header-institution a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--accent-faint);
+}
+.header-institution a:hover {
+  color: var(--accent-hover);
+  text-decoration-color: var(--accent-hover);
+}
 .header-market {
   display: block;
   font-size: 0.8125rem;

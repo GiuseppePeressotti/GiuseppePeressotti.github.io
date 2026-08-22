@@ -8,9 +8,9 @@ title: ""
   <!-- ── Profile rail ── -->
   <aside class="home-rail" aria-labelledby="home-name">
     <div class="home-profile reveal">
-    <img src="pic1.jpg" alt="Giuseppe Peressotti" class="header-photo" width="960" height="960" fetchpriority="high">
+    <img src="job_market_pic.png" alt="Giuseppe Peressotti" class="header-photo" width="640" height="640" fetchpriority="high">
     <h1 id="home-name" class="header-name">Giuseppe Peressotti</h1>
-    <p class="header-institution">The University of Texas at Dallas</p>
+    <p class="header-institution"><a href="https://epps.utdallas.edu/phd-students/giuseppe-peressotti/" target="_blank" rel="noopener">The University of Texas at Dallas</a></p>
     <span class="header-market">On the 2026–2027 Job Market</span>
 
     <div class="rail-keywords">
@@ -51,7 +51,7 @@ title: ""
       <div class="section-label">About</div>
       <div class="about-text">
         <p>Hi there and welcome! I'm a PhD Candidate in Public Policy and Political Economy at the University of Texas at Dallas. I'm currently on the 2026&ndash;2027 academic job market and expect to graduate in Spring 2027.</p>
-        <p>I define myself primarily as an International Political Economy scholar, with my main research sitting at the intersection of trade policy and digital governance. My dissertation, <em>Digital Governance Rulemaking Through Trade Policy: Drivers and Effects of Digital Provisions in PTAs</em>, studies how governments use trade agreements to build rules for the digital economy: why particular digital provisions emerge, how they spread across agreements and countries, and what happens once those international commitments are set.</p>
+        <p>I define myself primarily as an International Political Economy scholar, with my main research sitting at the intersection of trade policy and digital governance. My dissertation, <strong><em>Digital Governance Rulemaking Through Trade Policy: Drivers and Effects of Digital Provisions in PTAs</em></strong>, studies how governments use trade agreements to build rules for the digital economy: why particular digital provisions emerge, how they spread across agreements and countries, and what happens once those international commitments are set.</p>
         <p>Beyond my dissertation, I study how geopolitical competition shapes international cooperation, particularly through trade negotiations and the institutional choices governments make. I also examine how organized actors shape political change during periods of institutional instability, including democratic transitions and episodes of authoritarian backsliding. So far, my work has appeared in the <em>European Journal of International Relations</em> and the <em>Journal of Peace Research</em>, with additional WIP projects across my various areas of interest.</p>
         <p>At UT Dallas, I am also affiliated with the <a href="https://pinckney-lab.netlify.app/" target="_blank" rel="noopener">Pinckney Research Lab</a> <em>(a new name might be forthcoming)</em>, where I have contributed to projects examining the organizations that shape democratic transitions and, more recently, why actors supporting authoritarian and backsliding governments sometimes defect during periods of mass mobilization.</p>
         <p>If you are a graduate student or early career scholar working in IPE, you should also check out <a href="https://gsipe-workshop.github.io/" target="_blank" rel="noopener">GSIPE &mdash; the Graduate Students in International Political Economy Workshop</a>. GSIPE is a virtual, graduate-student-run workshop series featuring research presentations, professional-development events, and other opportunities for junior scholars to share their work, receive feedback, and connect with other graduate students working in international political economy. Don't forget to subscribe to our newsletter!</p>
