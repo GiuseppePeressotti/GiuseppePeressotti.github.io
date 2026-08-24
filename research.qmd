@@ -64,7 +64,7 @@ title: "Research"
       </div>
       <div class="pub">
         <div class="pub-title">From Loyalty to Exit: Why Regime Support Groups Defect during Civil Resistance</div>
-        <div class="pub-meta">Elmore, Naela, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney.</div>
+        <div class="pub-meta">Elmore, Naela, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney. To be presented at APSA 2026.</div>
       </div>
       <div class="pub">
         <div class="pub-title">Competing to Negotiate: How Rivalry Shapes the Fate of International Treaties</div>
