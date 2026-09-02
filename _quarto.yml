@@ -1,7 +1,7 @@
 project:
   type: website
   resources:
-    - CV_research_peressotti_august2026.pdf
+    - CV_research_peressotti_september2026.pdf
     - styles.css
     - job_market_pic.png
   render:
