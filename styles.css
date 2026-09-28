@@ -556,6 +556,15 @@ nav.scrolled { border-bottom-color: var(--border); }
   background: var(--accent-faint);
 }
 .pub-abstract[open] summary::after { transform: rotate(180deg); }
+.pub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.pub-actions .pub-abstract { margin-top: 0; }
+.pub-actions .pub-abstract[open] { flex-basis: 100%; }
 .pub-abstract p {
   margin-top: 0.5rem;
   font-size: 0.8125rem;
