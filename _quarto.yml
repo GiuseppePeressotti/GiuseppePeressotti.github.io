@@ -3,6 +3,8 @@ project:
   resources:
     - CV_research_peressotti_september2026.pdf
     - papers/peressotti_rulemakers_latest.pdf
+    - papers/elmore_et_al_2026_road_published.pdf
+    - papers/peressotti_2025_digital_provisions_published.pdf
     - styles.css
     - job_market_pic.png
   render:
