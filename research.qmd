@@ -68,16 +68,20 @@ title: "Research"
         <div class="pub-title">From Loyalty to Exit: Why Regime Support Groups Defect during Civil Resistance</div>
         <div class="pub-meta">Elmore, Naela, <strong>Giuseppe Peressotti</strong>, and Jonathan Pinckney. Presented at APSA 2026; to be presented at ISA 2027.</div>
       </div>
+      <div class="pub">
+        <div class="pub-title">Competing to Negotiate: External Competitive Pressure and the Launch of Trade Negotiations</div>
+        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Huei-Jyun Ye. To be presented at IPES 2026.</div>
+        <div class="pub-actions">
+          <a class="pub-link" href="papers/peressotti_ye_competing_latest.pdf" target="_blank" rel="noopener">Latest PDF</a>
+          <details class="pub-abstract"><summary>Abstract</summary><p>How do governments decide when to open trade negotiations? Research on trade cooperation has focused mainly on signed agreements, even though governments must first decide whether to launch trade talks at all. We shift attention to this earlier stage and argue that the launch of trade negotiations is shaped by external competitive pressure. We distinguish between two sources of such pressure. Market pressure arises when important export markets sign more trade agreements with other countries, while rivalry pressure arises when competing exporters expand their preferential trade ties. Because negotiations begin with specific counterparts, these pressures should also shape which country pairs are more likely to enter talks. We evaluate these arguments using a new dataset of 315 trade negotiations formally launched between 1980 and 2020 involving 30 Asia-Pacific countries. We find that broad country-level measures of market pressure and rivalry pressure show limited support, whereas dyads facing stronger external competitive pressure are more likely to launch negotiations. This pattern is strongest when we distinguish where rival exporters sign their agreements, especially when those agreements involve important export markets or the prospective partner itself. These findings highlight an important missing part of trade cooperation: governments’ earlier strategic responses to external competitive pressure become visible as soon as they launch trade negotiations, often years before agreements are signed.</p></details>
+        </div>
+      </div>
 
       <div class="section-subhead section-subhead--published">Work in Progress</div>
 
       <div class="pub">
         <div class="pub-title">Implementation After Ratification: Treaty Claims and Domestic Action</div>
         <div class="pub-meta"><strong>Peressotti, Giuseppe</strong>. Presented at GSIPE 2025, ISA 2025; to be presented at ISA 2027.</div>
-      </div>
-      <div class="pub">
-        <div class="pub-title">Competing to Negotiate: How Rivalry Shapes the Fate of International Treaties</div>
-        <div class="pub-meta"><strong>Peressotti, Giuseppe</strong> and Huei-Jyun Ye. To be presented at IPES 2026.</div>
       </div>
       <div class="pub">
         <div class="pub-title">Gender and Entrepreneurship: Evidence from Guatemala</div>
